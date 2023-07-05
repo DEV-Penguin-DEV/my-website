@@ -1,38 +1,118 @@
 <template>
   <MainHeader />
+  <main class="main-content">
+    <FirstScreen :DB="DB.blocks.first_screen.content" />
+    <SkillsSection :DB="DB.blocks.skils.content" />
+    <ExperienceSection :DB="DB.blocks.experience.content" />
+    <PortfolioSection :DB="DB.blocks.portfolio.content" />
+    <EducationSection :DB="DB.blocks.education.content" />
+    <LanguageSection :DB="DB.blocks.languages.content" />
+  </main>
 </template>
 
 <script>
-import MainHeader from "@/components/MainHeader";
+import MainHeader from "@/sections/MainHeader";
+import FirstScreen from "@/sections/FirstScreen";
+import SkillsSection from "@/sections/SkillsSection";
+import ExperienceSection from "@/sections/ExperienceSection";
+import PortfolioSection from "@/sections/PortfolioSection";
+import EducationSection from "@/sections/EducationSection";
+import LanguageSection from "@/sections/LanguageSection";
+import { db } from "@/db/db.js";
 
 export default {
   components: {
     MainHeader,
+    FirstScreen,
+    SkillsSection,
+    ExperienceSection,
+    PortfolioSection,
+    EducationSection,
+    LanguageSection,
+  },
+  data() {
+    return {
+      DB: db,
+    };
   },
 };
 </script>
 
 <style lang="scss">
-$bg-color: #000000;
-$success-color: #10c938;
-$white-color: #f9f9f9;
-$alert-color: #ff1d16;
-$second-text-color: #484848;
-$gold-color: #c3a66e;
-$main-text-color: #00e0ff;
-$blue-gradient: linear-gradient(
-    180deg,
-    rgba(85, 255, 255, 0.8) 0%,
-    rgba(0, 236, 255, 0) 100%
-  ),
-  rgba(0, 224, 255, 0.65);
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+body {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  margin: 0;
   color: $white-color;
   background-color: $bg-color;
+}
+
+.container {
+  width: 100vw;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+a {
+  color: $white-color;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+}
+
+.title {
+  font-size: 3.75rem;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.75rem;
+  letter-spacing: 0.1875rem;
+  color: $main-text-color;
+  margin-left: 48px;
+  margin-bottom: 50px;
+  display: block;
+  width: fit-content;
+  position: relative;
+
+  &::before {
+    @include default-pseudo-element(100%, 3px);
+    background-color: #fff;
+    bottom: -6px;
+    left: 0;
+  }
+
+  &::after {
+    @include default-pseudo-element(0%, 4px);
+    background-color: $main-hover-color;
+    bottom: -6px;
+    left: 0;
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+      transition: 0.5s;
+    }
+  }
+}
+
+ul,
+ol {
+  @include list-none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
 }
 </style>

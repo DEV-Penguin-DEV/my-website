@@ -127,27 +127,39 @@ export const db = {
         links: [
           {
             icon: "phone-icon.svg",
+            icon_alt: "Мобильный телефон.",
             link_Text: "+41 79 827 21 64",
+            href: "tel:+41798272164",
           },
           {
             icon: "telegram-icon.svg",
+            icon_alt: "Телеграм.",
             link_Text: "@konstantin_lysenko_tg",
+            href: "https://t.me/konstantin_lysenko_tg",
           },
           {
             icon: "linkedln-icon.svg",
+            icon_alt: "Linkedln.",
             link_Text: "Linkedln",
+            href: "https://www.linkedin.com/in/lysenkokonstantin",
           },
           {
             icon: "github-icon.svg",
+            icon_alt: "GitHub.",
             link_Text: "GitHub",
+            href: "https://github.com/DEV-Penguin-DEV",
           },
           {
             icon: "pinterest-icon.svg",
+            icon_alt: "Pinterest.",
             link_Text: "Pinterest",
+            href: "https://pin.it/1k5GkXD",
           },
           {
             icon: "email-icon.svg",
+            icon_alt: "Email.",
             link_Text: "k.lysenko@atomlc.com.ua",
+            href: "email:k.lysenko@atomlc.com.ua",
           },
         ],
       },
@@ -190,7 +202,7 @@ export const db = {
         ],
       },
     },
-    expirience: {
+    experience: {
       content: {
         title: "Опыт работы",
         companies: [
@@ -263,12 +275,10 @@ export const db = {
     portfolio: {
       content: {
         title: "Портфолио",
-        menu: {
-          links_text: ["Портфолио", "Sites", "Mobile Apps", "Design"],
-        },
+
         projects: [
           {
-            project_photo: "TODO",
+            project_photo: "ione.jpg",
             project_title: "Оптимизация и редизайн сайта WEB студии i1-web",
             project_time: "60-70 часов",
             technology_stack: [
@@ -286,10 +296,10 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
-            project_photo: "TODO",
+            project_photo: "iat.jpg",
             project_title:
               "Оптимизация и внесение крупных изменений на сайт автодилера IAT",
-            project_time: "155 часов",
+            project_time: "180 часов",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -305,7 +315,7 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
-            project_photo: "TODO",
+            project_photo: "keymap.jpg",
             project_title: "Landing Page для Украинского проекта",
             project_time: "45-50 часов",
             technology_stack: [
@@ -320,7 +330,7 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
-            project_photo: "TODO",
+            project_photo: "pets-drom.jpg",
             project_title: "Landing Page для NFT проекта",
             project_time: "20-25 часов",
             technology_stack: [
@@ -335,7 +345,7 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
-            project_photo: "TODO",
+            project_photo: "six-sities.jpg",
             project_title: "Сервис аренды квартир на react.ts",
             project_time: "70 часов",
             technology_stack: [
@@ -352,7 +362,7 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
-            project_photo: "TODO",
+            project_photo: "big-trip.jpg",
             project_title: "Сервис путишествий на ванильном JS",
             project_time: "80 часов",
             technology_stack: [
@@ -366,7 +376,7 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
-            project_photo: "TODO",
+            project_photo: "extrahop.jpg",
             project_title: "Дизайн одной страницы для сайта ExtraHop",
             project_time: "8 часов",
             technology_stack: [all_technologies.ps, all_technologies.figma],
@@ -374,7 +384,7 @@ export const db = {
             tag: PROJECT_TAGS.design,
           },
           {
-            project_photo: "TODO",
+            project_photo: "extrahop-email.jpg",
             project_title: "Дизайн email письма для ExtraHop",
             project_time: "6 часов",
             technology_stack: [all_technologies.ps, all_technologies.figma],
@@ -382,6 +392,20 @@ export const db = {
             tag: PROJECT_TAGS.design,
           },
         ],
+        text: {
+          sort: {
+            sort_texts: ["Всё", "Sites", "Mobile Apps", "Design"],
+            sort_tags: [
+              "all",
+              PROJECT_TAGS.site,
+              PROJECT_TAGS.mobile_app,
+              PROJECT_TAGS.design,
+            ],
+          },
+          projects_texts: {
+            project_time_title: "Время: ",
+          },
+        },
       },
     },
     education: {
@@ -418,7 +442,7 @@ export const db = {
     },
     languages: {
       content: {
-        title: "Образование",
+        title: "Языки",
         languages_list: [
           {
             language_name: "Русский",
