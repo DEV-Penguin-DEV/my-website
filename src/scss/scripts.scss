@@ -1,15 +1,3 @@
-@mixin list-none {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-@mixin button-none {
-  background: none;
-  border: none;
-  padding: 0;
-}
-
 @mixin wrapper($padding, $width: 100vw, $max-width: 100vw) {
   padding: 0 $padding;
   width: calc($width - ($padding * 2));
@@ -35,13 +23,13 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin centering-hight-pseudo-element() {
+@mixin centering-vertical-pseudo-element() {
   top: 50%;
 
   transform: translateY(-50%);
 }
 
-@mixin centering-width-pseudo-element() {
+@mixin centering-horizontal-absolut-element() {
   left: 50%;
   transform: translateX(-50%);
 }

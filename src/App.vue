@@ -50,6 +50,7 @@ body {
   margin: 0;
   color: $white-color;
   background-color: $bg-color;
+  padding-bottom: 20vh;
 }
 
 .container {
@@ -107,7 +108,9 @@ a {
 
 ul,
 ol {
-  @include list-none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 button {

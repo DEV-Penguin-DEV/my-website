@@ -90,11 +90,21 @@ export default {
 .experience {
   display: flex;
   gap: 25px;
+  max-width: 90vw;
+  margin: 0 auto;
+  background: $blue-gradient;
+  background-color: #000;
+  border-radius: 50px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
 }
 
 .experience__img {
   width: 668px;
   height: auto;
+  padding-left: 40px;
 }
 
 .experience__title {
@@ -124,6 +134,7 @@ export default {
   gap: 40px;
   text-align: left;
   flex-grow: 1;
+  padding-top: 20px;
 }
 
 .experience__position,

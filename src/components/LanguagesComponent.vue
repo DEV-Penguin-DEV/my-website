@@ -1,11 +1,11 @@
 <template>
   <ul class="languages__list">
     <li class="language" v-for="(language, index) in languages" :key="index">
-      <h3 class="language__title" :data-procents="language.level">
+      <h3 class="language__title">
         {{ language.language_name }}
       </h3>
       <div class="progress-bar">
-        <LanguageLinesComponent />
+        <LanguageLinesComponent :procent="language.level" />
         <LanguageLevelsComponent />
       </div>
     </li>
@@ -26,4 +26,32 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.language {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.progress-bar {
+  width: 100%;
+}
+
+.language__title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 142.857% */
+  letter-spacing: 2.1px;
+  @include margin-bottom(10px);
+  margin-left: 10px;
+}
+
+.languages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+</style>

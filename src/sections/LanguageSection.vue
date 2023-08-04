@@ -1,7 +1,7 @@
 <template>
   <section class="languages">
     <h2 class="languages__title title">{{ DB.title }}</h2>
-    <LanguagesComponent :languages="DB.languages_list" />
+    <LanguagesComponent class="container" :languages="DB.languages_list" />
   </section>
 </template>
 

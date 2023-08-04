@@ -34,6 +34,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  width: 100%;
 }
 .skills {
   margin-bottom: 130px;

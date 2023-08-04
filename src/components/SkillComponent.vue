@@ -23,13 +23,15 @@ export default {
 .skill {
   border-radius: 50%;
   box-shadow: 0px 1px 10px 0px #00e0ff;
-  min-width: 164px;
+  width: fit-content;
   min-height: 164px;
   width: 164px;
   height: 164px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .skill__img {
   min-width: 100px;

@@ -1,0 +1,61 @@
+@mixin scaleAnimation($el, $scaleTo, $duraction, $scaleFrom: 0, $delay: 0s) {
+  .block-animation {
+    &#{$el} {
+      scale: $scaleFrom;
+    }
+    &--active {
+      &#{$el} {
+        animation: scale $duraction $delay forwards ease-in-out;
+        will-change: scale;
+      }
+    }
+  }
+
+  @keyframes scale {
+    to {
+      scale: $scaleTo;
+    }
+  }
+}
+
+@mixin moveAnimation(
+  $el,
+  $duraction,
+  $distanse: 20vw,
+  $directionFrom: 'right',
+  $delay: 0s
+) {
+  .block-animation {
+    &#{$el} {
+      opacity: 0;
+      @if ($directionFrom == 'right') {
+        transform: translateX($distanse);
+      }
+      @if ($directionFrom == 'left') {
+        transform: translateX(calc(-1 * $distanse));
+      }
+      @if ($directionFrom == 'bottom') {
+        transform: translateY($distanse);
+      }
+      @if ($directionFrom == 'top') {
+        transform: translateY(calc(-1 * $distanse));
+      }
+    }
+
+    &--active {
+      &#{$el} {
+        animation: move $duraction $delay forwards ease-in-out;
+        will-change: opacity, transform;
+      }
+    }
+  }
+
+  @keyframes move {
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+}
+
+@include scaleAnimation('.industry', 1, 1.2s);
