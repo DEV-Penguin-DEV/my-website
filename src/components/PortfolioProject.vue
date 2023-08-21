@@ -81,10 +81,39 @@ export default {
   line-height: 2.525rem;
   letter-spacing: 0.15625rem;
   margin-bottom: 10px;
+
+  @media (max-width: $desktop-size) {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: $mini-desktop-size) {
+    font-size: 1.445rem;
+    line-height: 1.7rem;
+  }
 }
 
 .portfolio-project__time-title {
   margin-bottom: 20px;
+}
+
+.portfolio-project__time,
+.portfolio-project__time-title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 0.09375rem;
+
+  @media (max-width: $desktop-size) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: $mini-desktop-size) {
+    font-size: 1.275rem;
+  }
 }
 
 .portfolio-project__technologies {

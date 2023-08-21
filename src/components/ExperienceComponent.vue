@@ -88,7 +88,8 @@ export default {
 
 <style lang="scss" scoped>
 .experience {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 25px;
   max-width: 90vw;
   margin: 0 auto;
@@ -102,9 +103,10 @@ export default {
 }
 
 .experience__img {
-  width: 668px;
+  width: 100%;
   height: auto;
-  padding-left: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .experience__title {
@@ -113,19 +115,37 @@ export default {
   line-height: 2.1875rem;
   text-align: center;
   margin-bottom: 15px;
+
+  @media (max-width: $mini-desktop-size) {
+    font-size: 3.6rem;
+    line-height: 1.96rem;
+  }
+
+  &--h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.1875rem;
+    margin-bottom: 15px;
+
+    @media (max-width: $desktop-size) {
+      font-size: 1.75rem;
+    }
+    @media (max-width: $mini-desktop-size) {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
+  }
 }
 .experience__industry {
   font-size: 1.5625rem;
   font-weight: 500;
   line-height: 2.1875rem;
   text-align: center;
-}
 
-.experience__title--h4 {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 2.1875rem;
-  margin-bottom: 15px;
+  @media (max-width: $mini-desktop-size) {
+    font-size: 1.4rem;
+    line-height: 1.96rem;
+  }
 }
 
 .experience__text-content {
@@ -135,6 +155,10 @@ export default {
   text-align: left;
   flex-grow: 1;
   padding-top: 20px;
+
+  @media (max-width: $desktop-size) {
+    gap: 30px;
+  }
 }
 
 .experience__position,
@@ -142,12 +166,30 @@ export default {
   font-size: 2.8125rem;
   font-weight: 800;
   line-height: 2.1875rem;
+
+  @media (max-width: $desktop-size) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: $mini-desktop-size) {
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
 }
 
 .experience__main-task {
   font-size: 1.875rem;
   font-weight: 500;
   line-height: 1.875rem;
+
+  @media (max-width: $desktop-size) {
+    font-size: 1.625rem;
+  }
+
+  @media (max-width: $mini-desktop-size) {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
 }
 
 .experience__main-tasks-list {
@@ -156,5 +198,9 @@ export default {
   gap: 30px;
   list-style: disc;
   padding-left: 20px;
+
+  @media (max-width: $desktop-size) {
+    gap: 20px;
+  }
 }
 </style>

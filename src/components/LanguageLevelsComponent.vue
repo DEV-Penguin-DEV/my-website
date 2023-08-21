@@ -30,11 +30,14 @@ export default {
 
 .progress-bar__level {
   color: $main-text-color;
-  font-family: Montserrat;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 42px; /* 116.667% */
-  letter-spacing: 1.8px;
+  line-height: 2.625rem; /* 116.667% */
+  letter-spacing: 0.1125rem;
+
+  @media (max-width: $mini-desktop-size) {
+    font-size: 1.91rem;
+  }
 }
 </style>

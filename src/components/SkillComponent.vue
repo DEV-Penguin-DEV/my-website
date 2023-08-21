@@ -32,6 +32,12 @@ export default {
   align-items: center;
   margin: 0 auto;
   box-sizing: border-box;
+
+  @media (max-width: $mini-desktop-size) {
+    min-height: 145px;
+    width: 145px;
+    height: 145px;
+  }
 }
 .skill__img {
   min-width: 100px;

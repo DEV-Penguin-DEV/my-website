@@ -2,11 +2,11 @@
   .block-animation {
     &#{$el} {
       scale: $scaleFrom;
+      will-change: scale;
     }
     &--active {
       &#{$el} {
         animation: scale $duraction $delay forwards ease-in-out;
-        will-change: scale;
       }
     }
   }
@@ -40,12 +40,12 @@
       @if ($directionFrom == 'top') {
         transform: translateY(calc(-1 * $distanse));
       }
+      will-change: opacity, transform;
     }
 
     &--active {
       &#{$el} {
         animation: move $duraction $delay forwards ease-in-out;
-        will-change: opacity, transform;
       }
     }
   }
@@ -58,4 +58,147 @@
   }
 }
 
-@include scaleAnimation('.industry', 1, 1.2s);
+@mixin moveToAnimation($el, $duraction, $from: 0vw, $to: 100vw, $delay: 0s) {
+  .block-animation {
+    &#{$el} {
+      transform: translateX($from);
+      will-change: transform;
+    }
+
+    &--active {
+      &#{$el} {
+        animation: moveTo $duraction $delay forwards ease-in-out;
+      }
+    }
+  }
+
+  @keyframes moveTo {
+    to {
+      transform: translateX($to);
+    }
+  }
+}
+
+@mixin widthAnimation(
+  $el,
+  $duraction,
+  $widthFrom: 0vw,
+  $widthTo: 100vw,
+  $delay: 0s,
+  $modifier: ''
+) {
+  .block-animation {
+    &#{$el} {
+      width: $widthFrom;
+    }
+
+    &--active {
+      &#{$el} {
+        animation: width#{$modifier} $duraction $delay forwards ease-in-out;
+      }
+    }
+  }
+
+  @keyframes width#{$modifier} {
+    to {
+      width: $widthTo;
+    }
+  }
+}
+
+@mixin skewMoveAnimation(
+  $el,
+  $duraction,
+  $distance: 20vw,
+  $skewFrom: -30deg,
+  $skew50: 30deg,
+  $skewTo: 0deg,
+  $delay: 0s
+) {
+  .block-animation {
+    &#{$el} {
+      transform: translateX($distance * -1) skewX($skewFrom);
+      will-change: transform;
+    }
+
+    &--active {
+      &#{$el} {
+        animation: skewMove $duraction $delay forwards ease-in-out;
+      }
+    }
+  }
+
+  @keyframes skewMove {
+    50% {
+      transform: translateX($distance * 0.2) skewX($skew50);
+    }
+    to {
+      transform: translate(0, 0) skewX($skewTo);
+    }
+  }
+}
+
+@for $i from 0 through 5 {
+  // Замените 10 на количество элементов
+  @include moveAnimation(
+    '.first-screen__info-blocks .info-block:nth-of-type(#{$i + 1})',
+    0.35s,
+    20vw,
+    'right',
+    #{($i * 0.35) + 0.7}s
+  );
+}
+@include scaleAnimation('.first-screen__avatar-container', 1, 0.7s);
+@include moveToAnimation(
+  '.experiences .experiences-hide',
+  1.5s,
+  0,
+  -120vw,
+  0.2s
+);
+
+$languageLevels: (
+  a1: 10%,
+  a2: 23%,
+  b1: 41%,
+  b2: 60%,
+  c1: 77%,
+  c2: 100%,
+);
+
+@each $languageLevel, $width in $languageLevels {
+  @include widthAnimation(
+    '.languages .progress__green-line--#{$languageLevel}',
+    1s,
+    0,
+    #{$width},
+    0.7s,
+    $languageLevel
+  );
+}
+
+@include skewMoveAnimation(' .title', 0.8s);
+
+@include moveAnimation(
+  ' .portfolio-sort__item',
+  0.85s,
+  20vh,
+  $directionFrom: 'top'
+);
+
+@include moveAnimation(
+  '.portfolio-project',
+  0.85s,
+  20vw,
+  $directionFrom: 'right'
+);
+
+@include moveAnimation(
+  '.portfolio-project:nth-of-type(2n)',
+  0.85s,
+  20vw,
+  $directionFrom: 'left'
+);
+
+@include moveAnimation(' .header__logo', 0.85s, 20vw, $directionFrom: 'left');
+@include moveAnimation(' .header__link', 0.85s, 20vw, $directionFrom: 'right');

@@ -1,13 +1,14 @@
 <template>
-  <MainHeader />
+  <MainHeader :DB="DB.blocks.menu.content" />
   <main class="main-content">
     <FirstScreen :DB="DB.blocks.first_screen.content" />
-    <SkillsSection :DB="DB.blocks.skils.content" />
+    <SkillsSection :DB="DB.blocks.skills.content" />
     <ExperienceSection :DB="DB.blocks.experience.content" />
     <PortfolioSection :DB="DB.blocks.portfolio.content" />
-    <EducationSection :DB="DB.blocks.education.content" />
     <LanguageSection :DB="DB.blocks.languages.content" />
   </main>
+
+  <AppLoader />
 </template>
 
 <script>
@@ -16,8 +17,8 @@ import FirstScreen from "@/sections/FirstScreen";
 import SkillsSection from "@/sections/SkillsSection";
 import ExperienceSection from "@/sections/ExperienceSection";
 import PortfolioSection from "@/sections/PortfolioSection";
-import EducationSection from "@/sections/EducationSection";
 import LanguageSection from "@/sections/LanguageSection";
+import AppLoader from "@/sections/AppLoader";
 import { db } from "@/db/db.js";
 
 export default {
@@ -27,8 +28,8 @@ export default {
     SkillsSection,
     ExperienceSection,
     PortfolioSection,
-    EducationSection,
     LanguageSection,
+    AppLoader,
   },
   data() {
     return {
@@ -51,6 +52,11 @@ body {
   color: $white-color;
   background-color: $bg-color;
   padding-bottom: 20vh;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -73,7 +79,7 @@ a {
   font-family: Arial;
   font-style: normal;
   font-weight: 600;
-  line-height: 3.75rem;
+  line-height: 100%;
   letter-spacing: 0.1875rem;
   color: $main-text-color;
   margin-left: 48px;
@@ -81,6 +87,10 @@ a {
   display: block;
   width: fit-content;
   position: relative;
+
+  @media (max-width: $mini-desktop-size) {
+    font-size: 3rem;
+  }
 
   &::before {
     @include default-pseudo-element(100%, 3px);

@@ -4,4 +4,8 @@ import { startAnimation } from "./plugins/animation";
 
 createApp(App).mount("#app");
 
-document.addEventListener("DOMContentLoaded", () => startAnimation);
+window.addEventListener("load", () => {
+  startAnimation();
+  const preloader = document.querySelector(".preloader");
+  preloader.classList.add("hidden");
+});

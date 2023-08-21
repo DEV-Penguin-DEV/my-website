@@ -1,5 +1,5 @@
 <template>
-  <a class="info-block" :href="href">
+  <a class="info-block" :href="href" target="_blank">
     <img :src="`/img/${iconSrc}`" :alt="iconAlt" class="info-block__icon" />
     <p class="info-block__text">{{ blockContent }}</p>
   </a>
@@ -35,7 +35,7 @@ export default {
   gap: 25px;
   padding: 30px 45px;
   box-sizing: border-box;
-  transition: 1s;
+  transition: 0.75s;
 
   border-radius: 100px 30px 30px 100px;
   background: linear-gradient(
@@ -45,6 +45,10 @@ export default {
   );
   backdrop-filter: blur(10px);
   align-items: center;
+
+  @media (max-width: $mini-desktop-size) {
+    padding: 25px 35px;
+  }
 
   &:nth-of-type(2),
   &:nth-of-type(5) {
@@ -59,7 +63,7 @@ export default {
   }
 
   &:hover {
-    transition: 1s;
+    transition: 0.75s;
     cursor: pointer;
     scale: 1.1;
   }

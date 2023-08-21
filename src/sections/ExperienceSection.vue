@@ -1,6 +1,12 @@
 <template>
-  <section class="experiences" ref="sliderWrapper">
-    <h2 class="experience__title title">{{ DB.title }}</h2>
+  <section id="experience" class="experiences" ref="sliderWrapper">
+    <div class="experiences-hide">
+      <div class="experiences-hide__blur"></div>
+    </div>
+    <div class="title-container">
+      <h2 class="experience__title title">{{ DB.title }}</h2>
+    </div>
+
     <div class="slider-wrapper">
       <div class="experiences__container" ref="sliderContainer">
         <swiper
@@ -72,7 +78,33 @@ export default {
 </script>
 
 <style lang="scss">
+.swiper-cards {
+  overflow: hidden !important;
+}
+
+.experiences-hide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: $bg-color;
+}
+
+.experiences-hide__blur {
+  position: absolute;
+  top: 0;
+  right: -10vw;
+  width: 30vw;
+  height: 100%;
+  filter: blur(50px);
+  z-index: 3;
+  background-color: #000;
+}
+
 .experiences {
+  position: relative;
   & .swiper-button-next {
     right: 40px !important;
   }
@@ -109,7 +141,7 @@ export default {
 
 <style lang="scss" scoped>
 .experiences {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .experiences__container {

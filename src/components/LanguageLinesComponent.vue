@@ -5,9 +5,8 @@
     </ul>
 
     <div
-      class="progress__green-line"
+      :class="'progress__green-line progress__green-line--' + levelTitle"
       :style="{
-        width: procent,
         borderTopRightRadius: procent == '100%' ? '50px' : '0',
         borderBottomRightRadius: procent == '100%' ? '50px' : '0',
       }"
@@ -19,6 +18,10 @@
 export default {
   props: {
     procent: {
+      type: String,
+      required: true,
+    },
+    levelTitle: {
       type: String,
       required: true,
     },

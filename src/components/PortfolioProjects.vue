@@ -26,6 +26,9 @@
 
 <script>
 import PortfolioProject from "./PortfolioProject.vue";
+import { addBaseAnimationClass } from "@/plugins/animation";
+import { Visible } from "@/plugins/animation";
+
 export default {
   props: {
     DB: {
@@ -52,6 +55,19 @@ export default {
       this.shownItemsCount += 2;
 
       this.changeMoreButtonText();
+
+      window.setTimeout(() => {
+        addBaseAnimationClass(".portfolio-project");
+        const blockElements = document.querySelectorAll(
+          ".block-animation.portfolio-project"
+        );
+        blockElements.forEach((el) => {
+          Visible(el);
+        });
+        blockElements.forEach((block) => {
+          window.addEventListener("scroll", () => Visible(block));
+        });
+      }, 10);
     },
 
     filterProjects(sortType) {

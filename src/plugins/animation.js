@@ -1,18 +1,18 @@
-const Visible = function (target) {
+export const Visible = function (target) {
   // Все позиции элемента
   const targetPosition = {
-      top: window.pageYOffset + target.getBoundingClientRect().top,
-      left: window.pageXOffset + target.getBoundingClientRect().left,
-      right: window.pageXOffset + target.getBoundingClientRect().right,
-      bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
-    },
-    // Получаем позиции окна
-    windowPosition = {
-      top: window.pageYOffset,
-      left: window.pageXOffset,
-      right: window.pageXOffset + document.documentElement.clientWidth,
-      bottom: window.pageYOffset + document.documentElement.clientHeight,
-    };
+    top: window.pageYOffset + target.getBoundingClientRect().top,
+    left: window.pageXOffset + target.getBoundingClientRect().left,
+    right: window.pageXOffset + target.getBoundingClientRect().right,
+    bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
+  };
+  // Получаем позиции окна
+  const windowPosition = {
+    top: window.pageYOffset,
+    left: window.pageXOffset,
+    right: window.pageXOffset + document.documentElement.clientWidth,
+    bottom: window.pageYOffset + document.documentElement.clientHeight,
+  };
   if (
     targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
     targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
@@ -32,7 +32,7 @@ const Visible = function (target) {
   }
 };
 
-const addBaseAnimationClass = (...classes) => {
+export const addBaseAnimationClass = (...classes) => {
   classes.forEach((elClass) => {
     document.querySelectorAll(elClass).forEach((el) => {
       el.classList.add("block-animation");
@@ -42,7 +42,16 @@ const addBaseAnimationClass = (...classes) => {
 };
 
 export const startAnimation = () => {
-  addBaseAnimationClass();
+  addBaseAnimationClass(
+    ".header",
+    ".first-screen__info-blocks",
+    ".first-screen__avatar-container",
+    ".experiences",
+    ".languages",
+    ".title-container",
+    ".portfolio-sort",
+    ".portfolio-project"
+  );
   const blockElements = document.querySelectorAll(".block-animation");
   blockElements.forEach((el) => {
     Visible(el);

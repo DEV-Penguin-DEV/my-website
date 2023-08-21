@@ -1,6 +1,9 @@
 <template>
-  <section class="portfolio">
-    <h2 class="portfolio__title title">{{ DB.title }}</h2>
+  <section id="portfolio" class="portfolio">
+    <div class="title-container">
+      <h2 class="portfolio__title title">{{ DB.title }}</h2>
+    </div>
+
     <div class="portfolio__container container">
       <PortfolioSort @sortEvent="onSortChange" :sort="DB.text.sort" />
       <PortfolioProjects :DB="DB" :sortType="sortType" />
@@ -34,6 +37,11 @@ function onSortChange(sortType) {
 
 <style lang="scss" scoped>
 .portfolio {
+  margin-top: 50px;
   margin-bottom: 150px;
+
+  @media (max-width: $mini-desktop-size) {
+    margin-top: 0px;
+  }
 }
 </style>

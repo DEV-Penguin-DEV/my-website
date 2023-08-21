@@ -1,5 +1,5 @@
 <template>
-  <section class="first-screen">
+  <section id="main" class="first-screen">
     <div class="first-screen__avatar-container">
       <img
         src="../../public/img/avatar.svg"
