@@ -57,12 +57,8 @@ export default {
 .skills {
   width: 100vw;
   overflow-x: hidden;
-  margin-bottom: 130px;
+  margin-bottom: 8.5vw;
   padding-bottom: 20px;
-
-  @media (max-width: $mini-desktop-size) {
-    margin-bottom: 100px;
-  }
 }
 .skills__container {
   position: relative;
@@ -73,6 +69,10 @@ export default {
 
   @media (max-width: $mini-desktop-size) {
     gap: 4vh;
+  }
+
+  @media (max-width: $big-laptop-size) {
+    gap: 30px;
   }
 }
 

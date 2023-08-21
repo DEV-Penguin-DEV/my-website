@@ -82,6 +82,12 @@ export default {
   overflow: hidden !important;
 }
 
+.swiper-wrapper {
+  @media (max-width: $big-tablet-size) {
+    height: 90% !important;
+  }
+}
+
 .experiences-hide {
   position: absolute;
   width: 100%;
@@ -118,7 +124,7 @@ export default {
     &::after {
       font-weight: 800;
       color: #fff;
-      font-size: 3.5rem;
+      font-size: 5vw;
     }
   }
 

@@ -38,10 +38,6 @@ function onSortChange(sortType) {
 <style lang="scss" scoped>
 .portfolio {
   margin-top: 50px;
-  margin-bottom: 150px;
-
-  @media (max-width: $mini-desktop-size) {
-    margin-top: 0px;
-  }
+  margin-bottom: 9vw;
 }
 </style>

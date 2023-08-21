@@ -26,18 +26,26 @@ export default {
   position: absolute;
   @include centering-horizontal-absolut-element();
   z-index: 2;
+
+  @media (max-width: $big-tablet-size) {
+    width: 85%;
+  }
+
+  @media (max-width: $mini-tablet-size) {
+    width: 82%;
+  }
 }
 
 .progress-bar__level {
   color: $main-text-color;
-  font-size: 2.25rem;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 2.625rem; /* 116.667% */
+  line-height: 116%; /* 116.667% */
   letter-spacing: 0.1125rem;
 
-  @media (max-width: $mini-desktop-size) {
-    font-size: 1.91rem;
+  @media (max-width: $laptop-size) {
+    margin-top: 5px;
   }
 }
 </style>

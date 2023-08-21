@@ -101,7 +101,11 @@ export default {
 .portfolio-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 5vw;
+
+  @media (max-width: $laptop-size) {
+    gap: 2.5vw;
+  }
 }
 
 .portfolio-projects__button {
@@ -109,14 +113,27 @@ export default {
   background: #fff;
   backdrop-filter: blur(10px);
   font-weight: 700;
-  line-height: 1.875rem;
+  line-height: 2.2vw;
   color: $main-text-color;
-  font-size: 1.75rem;
+  font-size: 1.8vw;
   padding: 20px 60px;
   display: block;
   margin: 0 auto;
   margin-top: 80px;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media (max-width: $big-laptop-size) {
+    padding: 15px 40px;
+    margin-top: 70px;
+  }
+  @media (max-width: $laptop-size) {
+    margin-top: 60px;
+  }
+
+  @media (max-width: $tablet-size) {
+    padding: 10px 40px;
+    margin-top: 50px;
+  }
 }
 </style>

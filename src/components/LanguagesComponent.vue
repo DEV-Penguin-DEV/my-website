@@ -43,7 +43,7 @@ export default {
 .language__title {
   color: #fff;
   font-family: Montserrat;
-  font-size: 2.625rem;
+  font-size: 2.7vw;
   font-style: normal;
   font-weight: 600;
   line-height: 142%; /* 142.857% */
@@ -51,18 +51,14 @@ export default {
   @include margin-bottom(10px);
   margin-left: 10px;
 
-  @media (max-width: $mini-desktop-size) {
-    font-size: 2.1rem;
+  @media (max-width: $laptop-size) {
+    margin-bottom: 5px;
   }
 }
 
 .languages__list {
   display: flex;
   flex-direction: column;
-  gap: 75px;
-
-  @media (max-width: $mini-desktop-size) {
-    gap: 55px;
-  }
+  gap: 4vw;
 }
 </style>

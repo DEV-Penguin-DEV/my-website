@@ -72,25 +72,18 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  justify-content: space-between;
   text-align: left;
+
+  @media (max-width: $laptop-size) {
+    font-size: 10px;
+  }
 }
 
 .portfolio-project__title {
-  font-size: 2.125rem;
-  line-height: 2.525rem;
+  font-size: 2.1vw;
+  line-height: 2.3vw;
   letter-spacing: 0.15625rem;
   margin-bottom: 10px;
-
-  @media (max-width: $desktop-size) {
-    font-size: 1.7rem;
-    line-height: 2rem;
-  }
-
-  @media (max-width: $mini-desktop-size) {
-    font-size: 1.445rem;
-    line-height: 1.7rem;
-  }
 }
 
 .portfolio-project__time-title {
@@ -101,40 +94,32 @@ export default {
 .portfolio-project__time-title {
   color: #fff;
   font-family: Montserrat;
-  font-size: 1.875rem;
+  font-size: 2.2vw;
   font-style: normal;
   font-weight: 800;
   line-height: 100%;
   letter-spacing: 0.09375rem;
-
-  @media (max-width: $desktop-size) {
-    font-size: 1.5rem;
-  }
-
-  @media (max-width: $mini-desktop-size) {
-    font-size: 1.275rem;
-  }
 }
 
 .portfolio-project__technologies {
   display: flex;
   gap: 15px;
-  min-height: 70px;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 .portfolio-project__technology {
   border-radius: 48px;
   background: #000;
   box-shadow: 0px 1px 10px 0px #00e0ff;
-  width: 48px;
-  height: 48px;
+  width: 3vw;
+  height: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.7s;
 
   &:hover {
-    width: 70px;
-    height: 70px;
+    scale: 1.3;
     transition: 0.7s;
   }
 }

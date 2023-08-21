@@ -104,7 +104,7 @@ const i = 0;
   display: flex;
   align-items: center;
   padding-bottom: 135px;
-  gap: 80px;
+  gap: 5.5vw;
   width: fit-content;
   margin: 0 auto;
 }
@@ -115,20 +115,22 @@ const i = 0;
 }
 
 .first-screen__avatar {
-  width: 28.5rem;
+  width: 31.5vw;
   height: auto;
 }
 
 .first-screen__decor-line {
   position: absolute;
-  top: -2.25rem;
-  right: -4.6rem;
+  top: -3vw;
+  right: -5.3vw;
+  width: 21vw;
+  height: auto;
 }
 
 .first-screen__info-blocks {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2.5vw;
   width: fit-content;
 }
 </style>

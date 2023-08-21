@@ -69,12 +69,16 @@ export default {
 }
 
 .header__logo {
-  width: 155px;
+  width: 9vw;
   height: auto;
+
+  @media (max-width: $laptop-size) {
+    width: 11vw;
+  }
 }
 
 .header__link {
-  font-size: 2rem;
+  font-size: 2.5vw;
   line-height: normal;
   position: relative;
   height: fit-content;
@@ -108,11 +112,15 @@ export default {
 
   color: $main-text-color;
   font-family: Montserrat;
-  font-size: 34px;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px; /* 88.235% */
+  line-height: 100%;
   transition: 0.5s;
+
+  @media (max-width: $tablet-size) {
+    font-size: 3vw;
+  }
 
   &:hover {
     &::before {
@@ -134,24 +142,38 @@ export default {
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 4.5vw;
+
+  @media (max-width: $tablet-size) {
+    gap: 3vw;
+  }
+
+  @media (max-width: $mini-tablet-size) {
+    gap: 5vw;
+  }
 }
 
 .side-menu__logo {
-  width: 155px;
+  width: 15vw;
   height: auto;
   margin-bottom: 30px;
+
+  @media (max-width: $mini-tablet-size) {
+    width: 13vw;
+    margin-bottom: 15px;
+  }
 }
 
 .side-menu {
   position: fixed;
   top: 0;
-  left: -335px;
+  left: -29vw;
   padding: 26px;
   background: #000;
   min-height: 100vh;
   z-index: 100;
-  min-width: 358px;
+  min-width: 32vw;
+  max-width: 800px;
   box-sizing: border-box;
   transition: 0.7s;
   &.open {
@@ -172,6 +194,10 @@ export default {
   width: 3px;
   background: rgba(195, 166, 110, 0.28);
   @include centering-vertical-pseudo-element();
+
+  @media (max-width: $mini-tablet-size) {
+    width: 2px;
+  }
 }
 
 .side-menu__open-button {
@@ -179,6 +205,11 @@ export default {
   transition: 0.7s;
   position: absolute;
   @include centering-vertical-pseudo-element();
-  right: -22px;
+  right: -2.8vw;
+
+  & img {
+    width: 5.5vw;
+    height: auto;
+  }
 }
 </style>

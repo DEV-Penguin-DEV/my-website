@@ -110,86 +110,54 @@ export default {
 }
 
 .experience__title {
-  font-size: 4rem;
+  font-size: 5vw;
   font-weight: 800;
-  line-height: 2.1875rem;
+  line-height: 100%;
   text-align: center;
-  margin-bottom: 15px;
-
-  @media (max-width: $mini-desktop-size) {
-    font-size: 3.6rem;
-    line-height: 1.96rem;
-  }
 
   &--h4 {
-    font-size: 2rem;
+    font-size: 2.5vw;
     font-weight: 800;
-    line-height: 2.1875rem;
+    line-height: 2.6vw;
     margin-bottom: 15px;
 
-    @media (max-width: $desktop-size) {
-      font-size: 1.75rem;
-    }
-    @media (max-width: $mini-desktop-size) {
-      font-size: 1.4rem;
-      line-height: 1.8rem;
+    @media (max-width: $mini-tablet-size) {
+      margin-bottom: 5px;
     }
   }
 }
 .experience__industry {
-  font-size: 1.5625rem;
+  font-size: 1.5vw;
   font-weight: 500;
-  line-height: 2.1875rem;
+  line-height: 2.6vw;
   text-align: center;
-
-  @media (max-width: $mini-desktop-size) {
-    font-size: 1.4rem;
-    line-height: 1.96rem;
-  }
 }
 
 .experience__text-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 1.7vw;
   text-align: left;
   flex-grow: 1;
   padding-top: 20px;
 
-  @media (max-width: $desktop-size) {
-    gap: 30px;
+  @media (max-width: $tablet-size) {
+    padding-top: 0px;
+    gap: 2.3vw;
   }
 }
 
 .experience__position,
 .experience__period {
-  font-size: 2.8125rem;
+  font-size: 3.1vw;
   font-weight: 800;
-  line-height: 2.1875rem;
-
-  @media (max-width: $desktop-size) {
-    font-size: 2.5rem;
-  }
-
-  @media (max-width: $mini-desktop-size) {
-    font-size: 2rem;
-    line-height: 1.8rem;
-  }
+  line-height: 2.6vw;
 }
 
 .experience__main-task {
-  font-size: 1.875rem;
+  font-size: 2.2vw;
   font-weight: 500;
-  line-height: 1.875rem;
-
-  @media (max-width: $desktop-size) {
-    font-size: 1.625rem;
-  }
-
-  @media (max-width: $mini-desktop-size) {
-    font-size: 1.3rem;
-    line-height: 1.3rem;
-  }
+  line-height: 120%;
 }
 
 .experience__main-tasks-list {
@@ -201,6 +169,10 @@ export default {
 
   @media (max-width: $desktop-size) {
     gap: 20px;
+  }
+
+  @media (max-width: $tablet-size) {
+    gap: 10px;
   }
 }
 </style>

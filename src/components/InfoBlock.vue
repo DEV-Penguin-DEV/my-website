@@ -31,12 +31,11 @@ export default {
 <style lang="scss" scoped>
 .info-block {
   display: flex;
-  width: 560px;
-  gap: 25px;
-  padding: 30px 45px;
+  width: 35vw;
+  gap: 1.5vw;
+  padding: 1.5vw 45px;
   box-sizing: border-box;
   transition: 0.75s;
-
   border-radius: 100px 30px 30px 100px;
   background: linear-gradient(
     90deg,
@@ -47,19 +46,30 @@ export default {
   align-items: center;
 
   @media (max-width: $mini-desktop-size) {
-    padding: 25px 35px;
+    width: 38vw;
+    padding: 1.75vw 35px;
+  }
+
+  @media (max-width: $big-tablet-size) {
+    width: 39vw;
+    padding: 1.75vw 25px;
+  }
+
+  @media (max-width: $tablet-size) {
+    width: 40vw;
+    padding: 1.75vw 15px;
   }
 
   &:nth-of-type(2),
   &:nth-of-type(5) {
     position: relative;
-    left: -50px;
+    left: -3vw;
   }
 
   &:nth-of-type(1),
   &:nth-of-type(6) {
     position: relative;
-    left: -150px;
+    left: -9vw;
   }
 
   &:hover {
@@ -70,17 +80,17 @@ export default {
 }
 
 .info-block__icon {
-  width: 48px;
-  height: 48px;
+  width: 2.5vw;
+  height: 2.5vw;
 }
 
 .info-block__text {
   color: $main-text-color;
-  font-size: 1.75rem;
+  font-size: 1.8vw;
   font-family: Arial;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.875rem;
+  line-height: 2.2vw;
   letter-spacing: 0.175rem;
 }
 </style>

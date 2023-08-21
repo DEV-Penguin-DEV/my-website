@@ -61,6 +61,10 @@ function sortEvent() {
   @media (max-width: $mini-desktop-size) {
     margin-bottom: 50px;
   }
+
+  @media (max-width: $mini-tablet-size) {
+    border-radius: 0px 0px 40px 40px;
+  }
 }
 
 .portfolio-sort__list {
@@ -72,13 +76,17 @@ function sortEvent() {
   @media (max-width: $mini-desktop-size) {
     padding: 20px 40px;
   }
+
+  @media (max-width: $laptop-size) {
+    padding: 15px 30px;
+  }
 }
 
 .portfolio-sort__button {
   padding: 10px 25px;
-  line-height: 3.75rem;
+  line-height: 3.9vw;
   letter-spacing: 0.125rem;
-  font-size: 2.5rem;
+  font-size: 2.6vw;
   color: #fff;
   cursor: pointer;
   box-sizing: border-box;
@@ -86,9 +94,8 @@ function sortEvent() {
   border-radius: 2.5rem;
   transition: border-color 1s;
 
-  @media (max-width: $mini-desktop-size) {
-    line-height: 3rem;
-    font-size: 2rem;
+  @media (max-width: $tablet-size) {
+    padding: 5px 10px;
   }
 
   &.active {

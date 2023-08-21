@@ -36,6 +36,14 @@ export default {
   background: #fff;
   height: 30px;
   position: relative;
+
+  @media (max-width: $tablet-size) {
+    height: 25px;
+  }
+
+  @media (max-width: $mini-tablet-size) {
+    height: 20px;
+  }
 }
 
 .progress__green-line {

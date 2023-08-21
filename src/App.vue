@@ -53,6 +53,10 @@ body {
   background-color: $bg-color;
   padding-bottom: 20vh;
   overflow-x: hidden;
+
+  @media (max-width: $laptop-size) {
+    padding-bottom: 10vh;
+  }
 }
 
 html {
@@ -75,7 +79,7 @@ a {
 }
 
 .title {
-  font-size: 3.75rem;
+  font-size: 4vw;
   font-family: Arial;
   font-style: normal;
   font-weight: 600;
@@ -83,14 +87,10 @@ a {
   letter-spacing: 0.1875rem;
   color: $main-text-color;
   margin-left: 48px;
-  margin-bottom: 50px;
+  margin-bottom: 5vw;
   display: block;
   width: fit-content;
   position: relative;
-
-  @media (max-width: $mini-desktop-size) {
-    font-size: 3rem;
-  }
 
   &::before {
     @include default-pseudo-element(100%, 3px);
