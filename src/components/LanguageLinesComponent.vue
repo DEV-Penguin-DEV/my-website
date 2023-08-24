@@ -54,7 +54,7 @@ export default {
   }
 
   @media (max-width: $phone-size) {
-    height: 15px;
+    height: 20px;
   }
 }
 

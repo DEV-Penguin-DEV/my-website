@@ -146,9 +146,9 @@ export default {
   }
 
   @media (max-width: $phone-size) {
-    font-size: 2.5vw;
-    padding: 8px 25px;
-    margin-top: 30px;
+    font-size: 3.5vw;
+    padding: 10px 25px;
+    margin-top: 40px;
   }
 }
 </style>

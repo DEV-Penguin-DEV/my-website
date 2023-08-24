@@ -60,7 +60,7 @@ export default {
   }
 
   @media (max-width: $phone-size) {
-    font-size: 3.2vw;
+    font-size: 4vw;
   }
 }
 
@@ -71,6 +71,10 @@ export default {
 
   @media (max-width: $big-phone-size) {
     gap: 30px;
+  }
+
+  @media (max-width: $phone-size) {
+    gap: 45px;
   }
 }
 </style>

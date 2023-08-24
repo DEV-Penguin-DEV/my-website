@@ -60,7 +60,7 @@ export default {
     font-size: 2.1vw;
   }
   @media (max-width: $phone-size) {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }
 </style>

@@ -61,6 +61,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .container {
@@ -127,16 +128,12 @@ a {
 
   @media (max-width: $phone-size) {
     margin-left: 20px;
-    margin-bottom: 30px;
+    font-size: 6.5vw;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-size) {
     font-size: 3vw;
-  }
-
-  @media (max-width: $phone-size) {
-    font-size: 5.5vw;
-    margin-bottom: 40px;
   }
 
   &::before {
