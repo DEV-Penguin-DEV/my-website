@@ -30,13 +30,15 @@ export default {
       required: true,
     },
   },
-  data: function () {
+  data() {
+    const mediaQuery = window.matchMedia("(max-width: 440px)");
+    const elementsInRow = mediaQuery.matches ? 4 : 6;
     const rows = [];
     let rowIndex = 0;
     let rowsIndex = 0;
     let row = [];
     this.DB.data.forEach((el) => {
-      if (rowIndex >= 6) {
+      if (rowIndex >= elementsInRow) {
         rowIndex = 0;
         rows[rowsIndex] = row;
         rowsIndex++;
@@ -80,7 +82,7 @@ export default {
   display: flex;
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 6 {
   // Замените 10 на количество элементов
   .skills-row__container:nth-child(#{$i}) {
     will-change: transform;

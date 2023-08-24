@@ -86,6 +86,10 @@ export default {
   @media (max-width: $big-tablet-size) {
     height: 90% !important;
   }
+
+  @media (max-width: $phone-size) {
+    height: 100% !important;
+  }
 }
 
 .experiences-hide {
@@ -112,11 +116,27 @@ export default {
 .experiences {
   position: relative;
   & .swiper-button-next {
-    right: 40px !important;
+    right: 60px !important;
+
+    @media (max-width: $laptop-size) {
+      right: 30px !important;
+    }
+
+    @media (max-width: $big-phone-size) {
+      right: 10px !important;
+    }
   }
 
   & .swiper-button-prev {
-    left: 40px !important;
+    left: 60px !important;
+
+    @media (max-width: $laptop-size) {
+      left: 30px !important;
+    }
+
+    @media (max-width: $big-phone-size) {
+      left: 10px !important;
+    }
   }
 
   & .swiper-button-prev,
@@ -125,6 +145,14 @@ export default {
       font-weight: 800;
       color: #fff;
       font-size: 5vw;
+
+      @media (max-width: $laptop-size) {
+        font-size: 3.8vw;
+      }
+
+      @media (max-width: $phone-size) {
+        display: none;
+      }
     }
   }
 
@@ -148,6 +176,10 @@ export default {
 <style lang="scss" scoped>
 .experiences {
   min-height: 100vh;
+
+  @media (max-width: $big-phone-size) {
+    min-height: 0;
+  }
 }
 
 .experiences__container {

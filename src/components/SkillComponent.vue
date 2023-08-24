@@ -32,11 +32,21 @@ export default {
   align-items: center;
   margin: 0 auto;
   box-sizing: border-box;
+
+  @media (max-width: $phone-size) {
+    width: 15vw;
+    height: 15vw;
+  }
 }
 .skill__img {
   min-width: 6vw;
   min-height: 6vw;
   width: 6vw;
   height: 6vw;
+
+  @media (max-width: $phone-size) {
+    width: 9vw;
+    height: 9vw;
+  }
 }
 </style>

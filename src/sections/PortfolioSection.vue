@@ -39,5 +39,9 @@ function onSortChange(sortType) {
 .portfolio {
   margin-top: 50px;
   margin-bottom: 9vw;
+
+  @media (max-width: $phone-size) {
+    margin-bottom: 70px;
+  }
 }
 </style>

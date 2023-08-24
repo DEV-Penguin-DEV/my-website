@@ -44,6 +44,7 @@ export default {
   );
   backdrop-filter: blur(10px);
   align-items: center;
+  position: relative;
 
   @media (max-width: $mini-desktop-size) {
     width: 38vw;
@@ -60,16 +61,39 @@ export default {
     padding: 1.75vw 15px;
   }
 
+  @media (max-width: $phone-size) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
   &:nth-of-type(2),
   &:nth-of-type(5) {
-    position: relative;
     left: -3vw;
+
+    @media (max-width: $phone-size) {
+      left: 1vw;
+    }
   }
 
   &:nth-of-type(1),
   &:nth-of-type(6) {
-    position: relative;
     left: -9vw;
+
+    @media (max-width: $phone-size) {
+      left: -10vw;
+    }
+  }
+
+  &:nth-of-type(3),
+  &:nth-of-type(4) {
+    @media (max-width: $phone-size) {
+      left: 5vw;
+    }
   }
 
   &:hover {
@@ -82,6 +106,11 @@ export default {
 .info-block__icon {
   width: 2.5vw;
   height: 2.5vw;
+
+  @media (max-width: $phone-size) {
+    width: 70%;
+    height: 70%;
+  }
 }
 
 .info-block__text {
@@ -92,5 +121,9 @@ export default {
   font-weight: 700;
   line-height: 2.2vw;
   letter-spacing: 0.175rem;
+
+  @media (max-width: $phone-size) {
+    display: none;
+  }
 }
 </style>

@@ -233,7 +233,7 @@ export const db = {
           },
           {
             logo: "young-coder-school-logo.svg",
-            company_name: "YoungCoderSchool",
+            company_name: "Young Coder School",
             company_indystry: "Онлайн школа IT",
             position: "Преподаватель Web-разработки",
             period: "15.08.2022 - сейчас",

@@ -34,6 +34,14 @@ export default {
   @media (max-width: $mini-tablet-size) {
     width: 82%;
   }
+
+  @media (max-width: $big-phone-size) {
+    width: 88%;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 90%;
+  }
 }
 
 .progress-bar__level {
@@ -46,6 +54,13 @@ export default {
 
   @media (max-width: $laptop-size) {
     margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-size) {
+    font-size: 2.1vw;
+  }
+  @media (max-width: $phone-size) {
+    font-size: 2.5vw;
   }
 }
 </style>

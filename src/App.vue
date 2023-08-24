@@ -67,6 +67,18 @@ html {
   width: 100vw;
   padding: 0 40px;
   box-sizing: border-box;
+
+  @media (max-width: $laptop-size) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: $tablet-size) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: $big-phone-size) {
+    padding: 0 15px;
+  }
 }
 
 a {
@@ -76,6 +88,17 @@ a {
 
 * {
   margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .title {
@@ -92,11 +115,39 @@ a {
   width: fit-content;
   position: relative;
 
+  @media (max-width: $tablet-size) {
+    margin-left: 35px;
+    margin-bottom: 3.8vw;
+  }
+
+  @media (max-width: $big-phone-size) {
+    margin-left: 20px;
+    margin-bottom: 3.5vw;
+  }
+
+  @media (max-width: $phone-size) {
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-size) {
+    font-size: 3vw;
+  }
+
+  @media (max-width: $phone-size) {
+    font-size: 5.5vw;
+    margin-bottom: 40px;
+  }
+
   &::before {
     @include default-pseudo-element(100%, 3px);
     background-color: #fff;
     bottom: -6px;
     left: 0;
+
+    @media (max-width: $big-phone-size) {
+      height: 2px;
+    }
   }
 
   &::after {
@@ -106,6 +157,10 @@ a {
     left: 0;
     transition: 0.5s;
     z-index: 2;
+
+    @media (max-width: $big-phone-size) {
+      height: 3px;
+    }
   }
 
   &:hover {

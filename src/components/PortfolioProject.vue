@@ -77,28 +77,56 @@ export default {
   @media (max-width: $laptop-size) {
     font-size: 10px;
   }
+
+  @media (max-width: $tablet-size) {
+    gap: 10px;
+  }
 }
 
 .portfolio-project__title {
   font-size: 2.1vw;
-  line-height: 2.3vw;
+  line-height: 110%;
   letter-spacing: 0.15625rem;
   margin-bottom: 10px;
+
+  @media (min-width: $desktop-size) {
+    font-size: 1.8vw;
+  }
+
+  @media (max-width: $tablet-size) {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: $phone-size) {
+    font-size: 3.5vw;
+  }
 }
 
 .portfolio-project__time-title {
   margin-bottom: 20px;
+
+  @media (max-width: $big-tablet-size) {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio-project__time,
 .portfolio-project__time-title {
   color: #fff;
   font-family: Montserrat;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   font-style: normal;
   font-weight: 800;
   line-height: 100%;
   letter-spacing: 0.09375rem;
+
+  @media (min-width: $desktop-size) {
+    font-size: 1.6vw;
+  }
+
+  @media (max-width: $phone-size) {
+    font-size: 3vw;
+  }
 }
 
 .portfolio-project__technologies {
@@ -106,6 +134,10 @@ export default {
   gap: 15px;
   max-width: 100%;
   flex-wrap: wrap;
+
+  @media (max-width: $tablet-size) {
+    gap: 10px;
+  }
 }
 .portfolio-project__technology {
   border-radius: 48px;
@@ -117,6 +149,16 @@ export default {
   justify-content: center;
   align-items: center;
   transition: 0.7s;
+
+  @media (max-width: $big-phone-size) {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  @media (max-width: $phone-size) {
+    width: 6vw;
+    height: 6vw;
+  }
 
   &:hover {
     scale: 1.3;

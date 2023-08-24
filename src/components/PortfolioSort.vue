@@ -1,5 +1,7 @@
 <template>
   <nav class="portfolio-sort">
+    <p class="portfolio-sort__select"></p>
+
     <ul class="portfolio-sort__list">
       <li
         class="portfolio-sort__item"
@@ -33,6 +35,23 @@ export default {
     };
   },
   methods: { onSortClick, sortEvent },
+  mounted: () => {
+    const mediaQuery = window.matchMedia("(max-width: 440px)");
+    if (!mediaQuery.matches) {
+      return;
+    }
+    const sortElement = document.querySelector(".portfolio-sort");
+    const sortButton = document.querySelector(".portfolio-sort__select");
+    const activeSort = document.querySelector(".portfolio-sort__button.active");
+    const activeButtonContainer = activeSort.closest(".portfolio-sort__item");
+    activeButtonContainer.classList.add("active");
+
+    sortButton.textContent = activeSort.textContent;
+
+    sortButton.addEventListener("click", () => {
+      sortElement.classList.toggle("open");
+    });
+  },
 };
 
 function onSortClick(evt) {
@@ -41,6 +60,19 @@ function onSortClick(evt) {
     .querySelector(".portfolio-sort__button.active")
     .classList.remove("active");
   target.classList.add("active");
+
+  const mediaQuery = window.matchMedia("(max-width: 440px)");
+  if (mediaQuery.matches) {
+    const mobileSelect = document.querySelector(".portfolio-sort__select");
+    document
+      .querySelector(".portfolio-sort__item.active")
+      .classList.remove("active");
+    const activeButtonContainer = target.closest(".portfolio-sort__item");
+    activeButtonContainer.classList.add("active");
+    mobileSelect.textContent = target.textContent;
+    const sortElement = document.querySelector(".portfolio-sort");
+    sortElement.classList.toggle("open");
+  }
 
   this.sortType = target.dataset.sortTag;
   this.sortEvent();
@@ -62,8 +94,42 @@ function sortEvent() {
     margin-bottom: 50px;
   }
 
-  @media (max-width: $mini-tablet-size) {
+  @media (max-width: $tablet-size) {
     border-radius: 0px 0px 40px 40px;
+  }
+
+  @media (max-width: $phone-size) {
+    background: none;
+    box-shadow: none;
+    margin-bottom: 40px;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    cursor: pointer;
+
+    border: 4px solid $main-text-color;
+    font-size: 5vw;
+    border-radius: 2.5rem;
+    max-height: 40px;
+    transition: 1s;
+    overflow-y: hidden;
+  }
+
+  &.open {
+    transition: 0.7s;
+    max-height: 300px;
+
+    .portfolio-sort__button {
+      opacity: 1;
+      transition: 0.7s;
+    }
+
+    .portfolio-sort__select {
+      &::before {
+        transition: 0.5s;
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
   }
 }
 
@@ -79,6 +145,33 @@ function sortEvent() {
 
   @media (max-width: $laptop-size) {
     padding: 15px 30px;
+  }
+  @media (max-width: $phone-size) {
+    padding: 0 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    gap: 3vw;
+  }
+}
+
+.portfolio-sort__select {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 43px;
+  transition: 0.7s;
+  position: relative;
+
+  &::before {
+    @include default-pseudo-element(24px);
+    @include centering-vertical-pseudo-element();
+    right: 10px;
+    background: url("../../public/img/white-arrow.svg") no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.5s;
   }
 }
 
@@ -98,13 +191,34 @@ function sortEvent() {
     padding: 5px 10px;
   }
 
+  @media (max-width: $mini-tablet-size) {
+    border: 2px solid #000;
+  }
+
+  @media (max-width: $phone-size) {
+    border: none;
+    font-size: 5vw;
+    padding: 0;
+    opacity: 0;
+    transition: 0.7s;
+  }
+
   &.active {
     transition: border-color 1s;
     border-color: $main-text-color;
+    position: relative;
+
+    @media (max-width: $phone-size) {
+      display: none;
+    }
   }
 }
 
 .portfolio-sort__item {
   height: fit-content;
+
+  &.active {
+    display: none;
+  }
 }
 </style>

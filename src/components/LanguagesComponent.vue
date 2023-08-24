@@ -54,11 +54,23 @@ export default {
   @media (max-width: $laptop-size) {
     margin-bottom: 5px;
   }
+
+  @media (min-width: $desktop-size) {
+    font-size: 2.2vw;
+  }
+
+  @media (max-width: $phone-size) {
+    font-size: 3.2vw;
+  }
 }
 
 .languages__list {
   display: flex;
   flex-direction: column;
   gap: 4vw;
+
+  @media (max-width: $big-phone-size) {
+    gap: 30px;
+  }
 }
 </style>

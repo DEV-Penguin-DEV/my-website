@@ -37,12 +37,24 @@ export default {
   height: 30px;
   position: relative;
 
-  @media (max-width: $tablet-size) {
+  @media (max-width: $laptop-size) {
     height: 25px;
   }
 
-  @media (max-width: $mini-tablet-size) {
+  @media (max-width: $big-tablet-size) {
     height: 20px;
+  }
+
+  @media (max-width: $tablet-size) {
+    height: 15px;
+  }
+
+  @media (max-width: $big-phone-size) {
+    height: 10px;
+  }
+
+  @media (max-width: $phone-size) {
+    height: 15px;
   }
 }
 

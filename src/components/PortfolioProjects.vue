@@ -106,6 +106,11 @@ export default {
   @media (max-width: $laptop-size) {
     gap: 2.5vw;
   }
+
+  @media (max-width: $phone-size) {
+    grid-template-columns: 1fr;
+    gap: 7vw;
+  }
 }
 
 .portfolio-projects__button {
@@ -125,15 +130,25 @@ export default {
 
   @media (max-width: $big-laptop-size) {
     padding: 15px 40px;
-    margin-top: 70px;
+    margin-top: 60px;
   }
   @media (max-width: $laptop-size) {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 
   @media (max-width: $tablet-size) {
     padding: 10px 40px;
-    margin-top: 50px;
+    margin-top: 40px;
+  }
+
+  @media (max-width: $tablet-size) {
+    padding: 8px 35px;
+  }
+
+  @media (max-width: $phone-size) {
+    font-size: 2.5vw;
+    padding: 8px 25px;
+    margin-top: 30px;
   }
 }
 </style>

@@ -107,6 +107,14 @@ const i = 0;
   gap: 5.5vw;
   width: fit-content;
   margin: 0 auto;
+
+  @media (max-width: $mini-tablet-size) {
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $big-phone-size) {
+    padding-bottom: 80px;
+  }
 }
 
 .first-screen__avatar-container {
@@ -117,6 +125,10 @@ const i = 0;
 .first-screen__avatar {
   width: 31.5vw;
   height: auto;
+
+  @media (max-width: $phone-size) {
+    width: 59.06vw;
+  }
 }
 
 .first-screen__decor-line {
@@ -125,6 +137,12 @@ const i = 0;
   right: -5.3vw;
   width: 21vw;
   height: auto;
+
+  @media (max-width: $phone-size) {
+    width: 39.375vw;
+    top: -4.6vw;
+    right: -10.3vw;
+  }
 }
 
 .first-screen__info-blocks {
@@ -132,5 +150,9 @@ const i = 0;
   flex-direction: column;
   gap: 2.5vw;
   width: fit-content;
+
+  @media (max-width: $phone-size) {
+    gap: 5vw;
+  }
 }
 </style>
