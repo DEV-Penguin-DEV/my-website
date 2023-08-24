@@ -108,16 +108,30 @@ const PROJECT_TAGS = {
 };
 
 export const db = {
-  blocks: {
+  ru: {
     menu: {
       content: {
-        links_text: [
-          "Главная",
-          "Навыки",
-          "Опыт работы",
-          "Портфолио",
-          "Образование",
-          "Языки",
+        links: [
+          {
+            text: "Главная",
+            link: "#main",
+          },
+          {
+            text: "Навички",
+            link: "#skills",
+          },
+          {
+            text: "Опыт работы",
+            link: "#experience",
+          },
+          {
+            text: "Портфолио",
+            link: "#portfolio",
+          },
+          {
+            text: "Языки",
+            link: "#languages",
+          },
         ],
         normal_CV: {
           title: "PDF Версия резюме",
@@ -239,7 +253,7 @@ export const db = {
             period: "15.08.2022 - сейчас",
             mainTask: [
               "Проведение личных уроков",
-              "Проведение групповых уроков (2-5 учеников)",
+              "Проведение групповых уроков (2-14 учеников)",
               "Проведение пробных уроков",
             ],
           },
@@ -404,6 +418,8 @@ export const db = {
           projects_texts: {
             project_time_title: "Время: ",
           },
+          button_more: "Показать ещё",
+          button_hidden: "Скрыть",
         },
       },
     },
@@ -472,4 +488,387 @@ export const db = {
       },
     },
   },
+  ua: {
+    menu: {
+      content: {
+        links: [
+          {
+            text: "Головна",
+            link: "#main",
+          },
+          {
+            text: "Навички",
+            link: "#skills",
+          },
+          {
+            text: "Досвід роботи",
+            link: "#experience",
+          },
+          {
+            text: "Портфоліо",
+            link: "#portfolio",
+          },
+          {
+            text: "Мови",
+            link: "#languages",
+          },
+        ],
+        normal_CV: {
+          title: "PDF Версія резюме",
+          link: "https://drive.google.com/drive/folders/19XawFv3n3j4N7Xs4LFPULcxUjihfvGsE",
+        },
+      },
+    },
+    first_screen: {
+      content: {
+        links: [
+          {
+            icon: "phone-icon.svg",
+            icon_alt: "Мобільний телефон.",
+            link_Text: "+41 79 827 21 64",
+            href: "tel:+41798272164",
+          },
+          {
+            icon: "telegram-icon.svg",
+            icon_alt: "Телеграм.",
+            link_Text: "@konstantin_lysenko_tg",
+            href: "https://t.me/konstantin_lysenko_tg",
+          },
+          {
+            icon: "linkedln-icon.svg",
+            icon_alt: "Linkedln.",
+            link_Text: "Linkedln",
+            href: "https://www.linkedin.com/in/lysenkokonstantin",
+          },
+          {
+            icon: "github-icon.svg",
+            icon_alt: "GitHub.",
+            link_Text: "GitHub",
+            href: "https://github.com/DEV-Penguin-DEV",
+          },
+          {
+            icon: "pinterest-icon.svg",
+            icon_alt: "Pinterest.",
+            link_Text: "Pinterest",
+            href: "https://pin.it/1k5GkXD",
+          },
+          {
+            icon: "email-icon.svg",
+            icon_alt: "Email.",
+            link_Text: "k.lysenko@atomlc.com.ua",
+            href: "email:k.lysenko@atomlc.com.ua",
+          },
+        ],
+      },
+    },
+    skills: {
+      content: {
+        title: "Навички",
+        data: [
+          all_technologies.html,
+          all_technologies.css,
+          all_technologies.less,
+          all_technologies.sass,
+          all_technologies.js,
+          all_technologies.ts,
+          all_technologies.react,
+          all_technologies.vue,
+
+          all_technologies.spa,
+          all_technologies.gulp,
+          all_technologies.webpack,
+          all_technologies.node,
+          all_technologies.wp,
+          all_technologies.python,
+          all_technologies.docker,
+          all_technologies.php,
+
+          all_technologies.jquery,
+          all_technologies.git,
+          all_technologies.boostrap,
+          all_technologies.ps,
+          all_technologies.ai,
+          all_technologies.pr,
+          all_technologies.figma,
+          all_technologies.flutter_flow,
+          all_technologies.tilda,
+        ],
+      },
+    },
+    experience: {
+      content: {
+        title: "Досвід роботи",
+        companies: [
+          {
+            logo: "ione-logo.svg",
+            company_name: "IONE",
+            company_indystry: "WEB студія",
+            position: "Frontend Developer",
+            period: "20.12.2022 - зараз",
+            mainTask: [
+              "Розробка мобільних додатків на FlutterFlow",
+              "Розробка SPA на чистому JS",
+              "Розробка під WordPress",
+              "Оптимізація сайтів",
+              "Написання LandingPage з нуля",
+            ],
+          },
+          {
+            logo: "melon-logo.svg",
+            company_name: "MELON Team",
+            company_indystry: "WEB студія",
+            position: "Frontend Developer",
+            period: "9.01.2023 - зараз",
+            mainTask: [
+              "Створення різноманітної анімації",
+              "Верстка інтерфейсних елементів",
+              "Розробка LandingPage",
+            ],
+          },
+          {
+            logo: "young-coder-school-logo.svg",
+            company_name: "Young Coder School",
+            company_indystry: "Онлайн школа IT",
+            position: "Викладач Web-розробки",
+            period: "15.08.2022 - зараз",
+            mainTask: [
+              "Проведення особистих уроків",
+              "Проведення групових уроків (2-14 учнів)",
+              "Проведення пробних уроків",
+            ],
+          },
+          {
+            logo: "math-is-easy-logo.svg",
+            company_name: "МатЦеПросто",
+            company_indystry: "Школа математики",
+            position: "Менеджер з продажу",
+            period: "15.12.2022 - 24.1.2023",
+            mainTask: ["Генерація лідів", "Продажі", "Проведення акцій"],
+          },
+          {
+            logo: "takemotion-logo.svg",
+            company_name: "TakEmotion",
+            company_indystry: "Digital agency",
+            position: "Frontend Developer",
+            period: "15.12.2021 - 3.3.2022",
+            mainTask: [
+              "Кураторство відділом розробки",
+              "Створення корпоративного сайту",
+              "Створення сайтів для клієнтів",
+            ],
+          },
+        ],
+        text: {
+          position_title: "Позиція",
+          period_title: "Коли?",
+          main_task_title: "Основні завдання",
+        },
+      },
+    },
+    portfolio: {
+      content: {
+        title: "Портфоліо",
+
+        projects: [
+          {
+            project_photo: "ione.jpg",
+            project_title: "Оптимізація та редизайн сайту WEB студії i1-web",
+            project_time: "60-70 годин",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://i1-web.ru",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "iat.jpg",
+            project_title:
+              "Оптимізація та внесення великих змін на сайт автодилера IAT",
+            project_time: "180 годин",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://iat.ru",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "keymap.jpg",
+            project_title: "Landing Page для Українського проекту",
+            project_time: "45-50 годин",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "http://keymap.ua/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "pets-drom.jpg",
+            project_title: "Landing Page для NFT проекту",
+            project_time: "20-25 годин",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.less,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://dev-penguin-dev.github.io/pets-drome/build/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "six-sities.jpg",
+            project_title: "Сервіс оренди квартир на react.ts",
+            project_time: "70 годин",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.spa,
+              all_technologies.ts,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+              all_technologies.react,
+            ],
+            link: "https://586823-six-cities-simple-11.vercel.app/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "big-trip.jpg",
+            project_title: "Сервіс подорожей на ванільному JS",
+            project_time: "80 годин",
+            technology_stack: [
+              all_technologies.spa,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://dev-penguin-dev.github.io/586823-big-trip-simple-18/build/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "extrahop.jpg",
+            project_title: "Дизайн однієї сторінки для сайту ExtraHop",
+            project_time: "8 годин",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/joj6KJ06TjDz6wnE1km6C7/Landing-page-(ExtraHop)?node-id=27%3A170",
+            tag: PROJECT_TAGS.design,
+          },
+          {
+            project_photo: "extrahop-email.jpg",
+            project_title: "Дизайн email листа для ExtraHop",
+            project_time: "6 годин",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/ly1VSwgs8ufd6Cwf2hLfyO/email-design-(ExtraHop)?type=design&node-id=50-2",
+            tag: PROJECT_TAGS.design,
+          },
+        ],
+        text: {
+          sort: {
+            sort_texts: ["Все", "Sites", "Mobile Apps", "Design"],
+            sort_tags: [
+              "all",
+              PROJECT_TAGS.site,
+              PROJECT_TAGS.mobile_app,
+              PROJECT_TAGS.design,
+            ],
+          },
+          projects_texts: {
+            project_time_title: "Час: ",
+          },
+          button_more: "Показати більше",
+          button_hidden: "Приховати",
+        },
+      },
+    },
+    education: {
+      content: {
+        title: "Освіта",
+        education: [
+          {
+            title: "HTML ACADEMY",
+            period: "1.09.2021 - 27.02.2023",
+            important: 37.5,
+          },
+          {
+            title: "КПН Ліцей №145",
+            period: "1.09.2021 - 27.05.2022",
+            important: 12.5,
+          },
+          {
+            title: "Коледж Delemont",
+            period: "10.04.2022 - 31.06.2023",
+            important: 12.5,
+          },
+          {
+            title: "MBA",
+            period: "15.09.2017 - 23.05.2020",
+            important: 25,
+          },
+          {
+            title: "Кловський Ліцей №77",
+            period: "1.09.2014 - 31.05.2021",
+            important: 12.5,
+          },
+        ],
+      },
+    },
+    languages: {
+      content: {
+        title: "Мови",
+        languages_list: [
+          {
+            language_name: "Россійська",
+            level: "100%",
+            level_title: "c2",
+          },
+          {
+            language_name: "Український",
+            level: "100%",
+            level_title: "c2",
+          },
+          {
+            language_name: "Англійська",
+            level: "75%",
+            level_title: "c1",
+          },
+          {
+            language_name: "Французька",
+            level: "50%",
+            level_title: "b1",
+          },
+          {
+            language_name: "Німецька",
+            level: "30%",
+            level_title: "a2",
+          },
+        ],
+      },
+    },
+  },
+  en: {},
+  de: {},
+  fr: {},
 };

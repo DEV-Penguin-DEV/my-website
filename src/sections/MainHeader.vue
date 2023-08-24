@@ -13,31 +13,54 @@
 
     <nav class="side-menu" ref="menu">
       <div class="side-menu-container">
-        <img
-          class="side-menu__logo"
-          src="../../public/img/logo.svg"
-          alt="Logo."
-        />
+        <div class="side-menu__logo-container">
+          <img
+            class="side-menu__logo"
+            src="../../public/img/logo.svg"
+            alt="Logo."
+          />
+
+          <div class="language-select">
+            <div class="language-select__container">
+              <p class="language-select__text"></p>
+              <img src="" alt="" class="language-select__img" />
+            </div>
+
+            <ul class="language-select__list">
+              <li
+                :class="`language-select__item ${index == 0 ? 'active' : ''}`"
+                v-for="(language, index) in langs"
+                :key="index"
+                :data-lang="language"
+              >
+                <a
+                  :href="`${language}`"
+                  class="language-select__button"
+                  type="button"
+                >
+                  {{ language }}
+                </a>
+                <img
+                  :src="`/img/${language}.svg`"
+                  :alt="language"
+                  class="language-select__img"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <ul class="side-menu__list">
-          <li class="side-menu__item">
-            <a href="#main" class="side-menu__link active">Главная</a>
-          </li>
-
-          <li class="side-menu__item">
-            <a href="#skills" class="side-menu__link">Навыки</a>
-          </li>
-
-          <li class="side-menu__item">
-            <a href="#experience" class="side-menu__link">Опыт работы</a>
-          </li>
-
-          <li class="side-menu__item">
-            <a href="#portfolio" class="side-menu__link">Портфолио</a>
-          </li>
-
-          <li class="side-menu__item">
-            <a href="#languages" class="side-menu__link">Языки</a>
+          <li
+            class="side-menu__item"
+            v-for="(linkObject, index) in DB.links"
+            :key="index"
+          >
+            <a
+              :href="linkObject.link"
+              :class="`side-menu__link ${index == 0 ? 'active' : ''}`"
+              >{{ linkObject.text }}</a
+            >
           </li>
         </ul>
       </div>
@@ -63,6 +86,11 @@ export default {
       required: true,
     },
   },
+  data() {
+    return {
+      langs: ["ru", "ua", "en", "de", "fr"],
+    };
+  },
   mounted() {
     const buttons = document.querySelectorAll(".open-mobile-menu-button");
     const menuLinks = document.querySelectorAll(".side-menu__link");
@@ -73,18 +101,48 @@ export default {
       });
     });
 
+    const langsButtons = document.querySelectorAll(".language-select__item");
+    const currentImg = document.querySelector(".language-select__img");
+    const currentText = document.querySelector(".language-select__text");
+    const currentLang = document.querySelector(".language-select__item.active");
+    const langContainer = document.querySelector(".language-select");
+    const langButton = document.querySelector(".language-select__container");
+
+    currentImg.src = `/img/${currentLang.dataset.lang}.svg`;
+    currentText.textContent = currentLang.dataset.lang;
+
+    langButton.addEventListener("click", () => {
+      langContainer.classList.toggle("open");
+    });
+
+    langsButtons.forEach((langButton) => {
+      langButton.addEventListener("click", () => {
+        const lang = langButton.dataset.lang;
+        document
+          .querySelector(".language-select__item.active")
+          .classList.remove("active");
+
+        langButton.classList.add("active");
+        currentImg.src = `/img/${lang}.svg`;
+        currentText.textContent = lang;
+        langContainer.classList.remove("open");
+        this.$store.commit("changeLang", lang);
+      });
+    });
+
     const mobileOpenButton = document.querySelector(
       ".open-mobile-menu-button--mobile"
     );
     const mediaQuery = window.matchMedia("(max-width: 440px)");
-    if (mediaQuery.matches) {
-      menuLinks.forEach((menuLink) => {
-        menuLink.addEventListener("click", () => {
-          mobileOpenButton.classList.remove("open");
-          this.$refs.menu.classList.remove("open");
-        });
-      });
+    if (!mediaQuery.matches) {
+      return;
     }
+    menuLinks.forEach((menuLink) => {
+      menuLink.addEventListener("click", () => {
+        mobileOpenButton.classList.remove("open");
+        this.$refs.menu.classList.remove("open");
+      });
+    });
   },
 };
 </script>
@@ -333,6 +391,14 @@ export default {
   box-sizing: border-box;
   transition: 0.7s;
 
+  @media (max-width: $mini-tablet-size) {
+    padding: 20px;
+  }
+
+  @media (max-width: $big-phone-size) {
+    padding: 15px;
+  }
+
   @media (max-width: $phone-size) {
     top: -100vh;
     min-width: 0;
@@ -360,6 +426,146 @@ export default {
       transform: translateY(-50%) rotate(180deg);
       transition: 0.7s;
     }
+  }
+}
+
+.side-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.language-select__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+
+  @media (max-width: $laptop-size) {
+    gap: 7.5px;
+  }
+}
+
+.language-select__button {
+  color: #f9f9f9;
+  font-family: Montserrat;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 100% */
+  letter-spacing: 1.5px;
+  cursor: pointer;
+
+  @media (max-width: $phone-size) {
+    font-size: 6vw;
+  }
+}
+
+.language-select__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s;
+  gap: 5px;
+  z-index: -10;
+
+  &.active {
+    display: none;
+  }
+}
+
+.language-select__img {
+  width: 2.5vw;
+  height: 2.5vw;
+
+  @media (max-width: $phone-size) {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+}
+.language-select {
+  max-height: 2.5vw;
+  border-radius: 40px;
+  border: 4px solid #00e0ff;
+  transition: 0.7s;
+  transition-delay: 0.1s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 20px;
+  background-color: #000;
+  z-index: 200;
+
+  &.open {
+    transition: 0.7s;
+    max-height: 400px;
+
+    & .language-select__item {
+      transition: 1s;
+      opacity: 1;
+      z-index: 20;
+    }
+  }
+
+  @media (max-width: $mini-desktop-size) {
+    padding: 10px 15px;
+  }
+
+  @media (max-width: $big-tablet-size) {
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+
+  @media (max-width: $tablet-size) {
+    right: -10px;
+  }
+
+  @media (max-width: $mini-tablet-size) {
+    border-width: 2px;
+  }
+
+  @media (max-width: $big-phone-size) {
+    right: -5px;
+    padding: 2px 6px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: $phone-size) {
+    right: 5px;
+    top: 60px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    max-height: 7.5vw;
+  }
+}
+
+.side-menu__logo-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.language-select__container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.language-select__text {
+  color: #f9f9f9;
+  font-family: Montserrat;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 100% */
+  letter-spacing: 1.5px;
+
+  @media (max-width: $phone-size) {
+    font-size: 6vw;
   }
 }
 

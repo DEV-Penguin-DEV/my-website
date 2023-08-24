@@ -21,7 +21,7 @@
           :mousewheel="true"
           :keyboard="true"
         >
-          <swiper-slide v-for="(company, index) in slides" :key="index">
+          <swiper-slide v-for="(company, index) in DB.companies" :key="index">
             <ExperienceComponent
               :iconSrc="company.logo"
               :iconAlt="`${company.company_name} logo.`"
@@ -64,11 +64,6 @@ export default {
     },
   },
   components: { ExperienceComponent, Swiper, SwiperSlide },
-  data() {
-    return {
-      slides: this.DB.companies,
-    };
-  },
   setup() {
     return {
       modules: [Navigation, A11y, Autoplay, Pagination, EffectCards],

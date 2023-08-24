@@ -20,7 +20,7 @@
     class="portfolio-projects__button"
     v-if="DB.projects.length > 4"
   >
-    {{ buttonText }}
+    {{ `${buttonText ? DB.text.button_more : DB.text.button_hidden}` }}
   </button>
 </template>
 
@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       shownItemsCount: 4,
-      buttonText: "Показать ещё",
+      buttonText: true,
       previousSortType: this.sortType,
     };
   },
@@ -71,11 +71,11 @@ export default {
     },
 
     filterProjects(sortType) {
-      if (this.previousSortType != sortType) {
-        this.shownItemsCount = 4;
-        this.buttonText = "Показать ещё";
-      } else {
+      if (this.previousSortType == sortType) {
         this.previousSortType = sortType;
+      } else {
+        this.shownItemsCount = 4;
+        this.buttonText = true;
       }
 
       return sortType == "all"
@@ -84,13 +84,13 @@ export default {
     },
 
     changeMoreButtonText() {
-      if (this.buttonText == "Скрыть") {
+      if (!this.buttonText) {
         this.shownItemsCount = 4;
-        this.buttonText = "Показать ещё";
+        this.buttonText = true;
         return;
       }
       if (this.shownItemsCount >= this.filterProjects(this.sortType).length) {
-        this.buttonText = "Скрыть";
+        this.buttonText = false;
       }
     },
   },

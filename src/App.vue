@@ -1,11 +1,11 @@
 <template>
-  <MainHeader :DB="DB.blocks.menu.content" />
+  <MainHeader :DB="DB.menu.content" />
   <main class="main-content">
-    <FirstScreen :DB="DB.blocks.first_screen.content" />
-    <SkillsSection :DB="DB.blocks.skills.content" />
-    <ExperienceSection :DB="DB.blocks.experience.content" />
-    <PortfolioSection :DB="DB.blocks.portfolio.content" />
-    <LanguageSection :DB="DB.blocks.languages.content" />
+    <FirstScreen :DB="DB.first_screen.content" />
+    <SkillsSection :DB="DB.skills.content" />
+    <ExperienceSection :DB="DB.experience.content" />
+    <PortfolioSection :DB="DB.portfolio.content" />
+    <LanguageSection :DB="DB.languages.content" />
   </main>
 
   <AppLoader />
@@ -33,8 +33,18 @@ export default {
   },
   data() {
     return {
-      DB: db,
+      DB: db[this.$store.state.lang],
     };
+  },
+  watch: {
+    // Отслеживаем изменения в состоянии lang
+    "$store.state.lang": {
+      handler(newLang) {
+        // Обновляем значение DB на основе нового состояния lang
+        this.DB = db[newLang];
+      },
+      immediate: true, // Позволяет вызвать обработчик сразу при монтировании компонента
+    },
   },
 };
 </script>
