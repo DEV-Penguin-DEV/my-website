@@ -28,18 +28,16 @@
 
             <ul class="language-select__list">
               <li
-                :class="`language-select__item ${index == 0 ? 'active' : ''}`"
+                :class="`language-select__item ${
+                  language == this.$store.state.lang ? 'active' : ''
+                }`"
                 v-for="(language, index) in langs"
                 :key="index"
                 :data-lang="language"
               >
-                <a
-                  :href="`${language}`"
-                  class="language-select__button"
-                  type="button"
-                >
+                <button class="language-select__button" type="button">
                   {{ language }}
-                </a>
+                </button>
                 <img
                   :src="`/img/${language}.svg`"
                   :alt="language"
@@ -79,6 +77,8 @@
 </template>
 
 <script>
+import { updateAddressPath } from "@/router";
+
 export default {
   props: {
     DB: {
@@ -104,29 +104,36 @@ export default {
     const langsButtons = document.querySelectorAll(".language-select__item");
     const currentImg = document.querySelector(".language-select__img");
     const currentText = document.querySelector(".language-select__text");
-    const currentLang = document.querySelector(".language-select__item.active");
-    const langContainer = document.querySelector(".language-select");
-    const langButton = document.querySelector(".language-select__container");
+    window.addEventListener("load", () => {
+      const currentLang = Array.from(
+        document.querySelectorAll(".language-select__item")
+      ).find((lang) => {
+        return lang.dataset.lang === this.$store.state.lang;
+      });
+      const langContainer = document.querySelector(".language-select");
+      const langButton = document.querySelector(".language-select__container");
 
-    currentImg.src = `/img/${currentLang.dataset.lang}.svg`;
-    currentText.textContent = currentLang.dataset.lang;
+      currentImg.src = `/img/${currentLang.dataset.lang}.svg`;
+      currentText.textContent = currentLang.dataset.lang;
 
-    langButton.addEventListener("click", () => {
-      langContainer.classList.toggle("open");
-    });
-
-    langsButtons.forEach((langButton) => {
       langButton.addEventListener("click", () => {
-        const lang = langButton.dataset.lang;
-        document
-          .querySelector(".language-select__item.active")
-          .classList.remove("active");
+        langContainer.classList.toggle("open");
+      });
 
-        langButton.classList.add("active");
-        currentImg.src = `/img/${lang}.svg`;
-        currentText.textContent = lang;
-        langContainer.classList.remove("open");
-        this.$store.commit("changeLang", lang);
+      langsButtons.forEach((langButton) => {
+        langButton.addEventListener("click", () => {
+          const lang = langButton.dataset.lang;
+          document
+            .querySelector(".language-select__item.active")
+            .classList.remove("active");
+
+          langButton.classList.add("active");
+          currentImg.src = `/img/${lang}.svg`;
+          currentText.textContent = lang;
+          langContainer.classList.remove("open");
+          this.$store.commit("changeLang", lang);
+          updateAddressPath(lang);
+        });
       });
     });
 

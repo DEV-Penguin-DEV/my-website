@@ -26,7 +26,7 @@
               :iconSrc="company.logo"
               :iconAlt="`${company.company_name} logo.`"
               :companyName="company.company_name"
-              :companyIndustry="company.company_indystry"
+              :companyIndustry="company.company_industry"
               :position="company.position"
               :timePeriod="company.period"
               :mainTasks="company.mainTask"

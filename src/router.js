@@ -27,4 +27,22 @@ if (["ru", "de", "ua", "fr", "en"].includes(langFromPath)) {
   });
 }
 
+export function updateAddressPath(newPath) {
+  const currentPath = router.currentRoute.value.path; // Получаем текущий путь
+  const rootPath = window.location.origin; // Получаем корень сайта
+
+  // Извлекаем все "/.." и т.д. из текущего пути
+  const pathParts = currentPath.split("/").filter((part) => part !== "..");
+
+  // Объединяем путь из корня и нового пути, игнорируя начальные "../"
+  const newPathParts = newPath.split("/").filter((part) => part !== "..");
+  const finalPathParts = [
+    ...pathParts.slice(0, -newPathParts.length),
+    ...newPathParts,
+  ];
+
+  const newFullPath = `${rootPath}${finalPathParts.join("/")}`;
+  window.history.pushState({}, "", newFullPath); // Обновляем адресную строку
+}
+
 export default router;

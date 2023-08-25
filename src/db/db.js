@@ -222,7 +222,7 @@ export const db = {
           {
             logo: "ione-logo.svg",
             company_name: "IONE",
-            company_indystry: "WEB студия",
+            company_industry: "WEB студия",
             position: "Frontend Developer",
             period: "20.12.2022 - сейчас",
             mainTask: [
@@ -236,7 +236,7 @@ export const db = {
           {
             logo: "melon-logo.svg",
             company_name: "MELON Team",
-            company_indystry: "WEB студия",
+            company_industry: "WEB студия",
             position: "Frontend Developer",
             period: "9.01.2023 - сейчас",
             mainTask: [
@@ -248,7 +248,7 @@ export const db = {
           {
             logo: "young-coder-school-logo.svg",
             company_name: "Young Coder School",
-            company_indystry: "Онлайн школа IT",
+            company_industry: "Онлайн школа IT",
             position: "Преподаватель Web-разработки",
             period: "15.08.2022 - сейчас",
             mainTask: [
@@ -260,7 +260,7 @@ export const db = {
           {
             logo: "math-is-easy-logo.svg",
             company_name: "МатЦеПросто",
-            company_indystry: "Школа математики",
+            company_industry: "Школа математики",
             position: "Менеджер по продажам",
             period: "15.12.2022 - 24.1.2023",
             mainTask: ["Генерация лидов", "Продажи", "Проведение акций"],
@@ -268,7 +268,7 @@ export const db = {
           {
             logo: "takemotion-logo.svg",
             company_name: "TakEmotion",
-            company_indystry: "Digital agency",
+            company_industry: "Digital agency",
             position: "Frontend Developer",
             period: "15.12.2021 - 3.3.2022",
             mainTask: [
@@ -423,38 +423,6 @@ export const db = {
         },
       },
     },
-    education: {
-      content: {
-        title: "Образование",
-        educations: [
-          {
-            title: "HTML ACADEMY",
-            period: "1.09.2021 - 27.02.2023",
-            important: 37.5,
-          },
-          {
-            title: "КПН Лицей №145",
-            period: "1.09.2021 - 27.05.2022",
-            important: 12.5,
-          },
-          {
-            title: "Колледж Delemont",
-            period: "10.04.2022 - 31.06.2023",
-            important: 12.5,
-          },
-          {
-            title: "MBA",
-            period: "15.09.2017 - 23.05.2020",
-            important: 25,
-          },
-          {
-            title: "Кловский Лицей №77",
-            period: "1.09.2014 - 31.05.2021",
-            important: 12.5,
-          },
-        ],
-      },
-    },
     languages: {
       content: {
         title: "Языки",
@@ -602,7 +570,7 @@ export const db = {
           {
             logo: "ione-logo.svg",
             company_name: "IONE",
-            company_indystry: "WEB студія",
+            company_industry: "WEB студія",
             position: "Frontend Developer",
             period: "20.12.2022 - зараз",
             mainTask: [
@@ -616,7 +584,7 @@ export const db = {
           {
             logo: "melon-logo.svg",
             company_name: "MELON Team",
-            company_indystry: "WEB студія",
+            company_industry: "WEB студія",
             position: "Frontend Developer",
             period: "9.01.2023 - зараз",
             mainTask: [
@@ -628,7 +596,7 @@ export const db = {
           {
             logo: "young-coder-school-logo.svg",
             company_name: "Young Coder School",
-            company_indystry: "Онлайн школа IT",
+            company_industry: "Онлайн школа IT",
             position: "Викладач Web-розробки",
             period: "15.08.2022 - зараз",
             mainTask: [
@@ -640,7 +608,7 @@ export const db = {
           {
             logo: "math-is-easy-logo.svg",
             company_name: "МатЦеПросто",
-            company_indystry: "Школа математики",
+            company_industry: "Школа математики",
             position: "Менеджер з продажу",
             period: "15.12.2022 - 24.1.2023",
             mainTask: ["Генерація лідів", "Продажі", "Проведення акцій"],
@@ -648,7 +616,7 @@ export const db = {
           {
             logo: "takemotion-logo.svg",
             company_name: "TakEmotion",
-            company_indystry: "Digital agency",
+            company_industry: "Digital agency",
             position: "Frontend Developer",
             period: "15.12.2021 - 3.3.2022",
             mainTask: [
@@ -803,38 +771,6 @@ export const db = {
         },
       },
     },
-    education: {
-      content: {
-        title: "Освіта",
-        education: [
-          {
-            title: "HTML ACADEMY",
-            period: "1.09.2021 - 27.02.2023",
-            important: 37.5,
-          },
-          {
-            title: "КПН Ліцей №145",
-            period: "1.09.2021 - 27.05.2022",
-            important: 12.5,
-          },
-          {
-            title: "Коледж Delemont",
-            period: "10.04.2022 - 31.06.2023",
-            important: 12.5,
-          },
-          {
-            title: "MBA",
-            period: "15.09.2017 - 23.05.2020",
-            important: 25,
-          },
-          {
-            title: "Кловський Ліцей №77",
-            period: "1.09.2014 - 31.05.2021",
-            important: 12.5,
-          },
-        ],
-      },
-    },
     languages: {
       content: {
         title: "Мови",
@@ -868,7 +804,1050 @@ export const db = {
       },
     },
   },
-  en: {},
-  de: {},
-  fr: {},
+  en: {
+    menu: {
+      content: {
+        links: [
+          {
+            text: "Home",
+            link: "#main",
+          },
+          {
+            text: "Skills",
+            link: "#skills",
+          },
+          {
+            text: "Work experience",
+            link: "#experience",
+          },
+          {
+            text: "Portfolio",
+            link: "#portfolio",
+          },
+          {
+            text: "Languages",
+            link: "#languages",
+          },
+        ],
+        normal_CV: {
+          title: "PDF version of the resume",
+          link: "https://drive.google.com/drive/folders/19XawFv3n3j4N7Xs4LFPULcxUjihfvGsE",
+        },
+      },
+    },
+    first_screen: {
+      content: {
+        links: [
+          {
+            icon: "phone-icon.svg",
+            icon_alt: "Cell phone.",
+            link_Text: "+41 79 827 21 64",
+            href: "tel:+41798272164",
+          },
+          {
+            icon: "telegram-icon.svg",
+            icon_alt: "telegram.",
+            link_Text: "@konstantin_lysenko_tg",
+            href: "https://t.me/konstantin_lysenko_tg",
+          },
+          {
+            icon: "linkedln-icon.svg",
+            icon_alt: "Linkedln.",
+            link_Text: "Linkedln",
+            href: "https://www.linkedin.com/in/lysenkokonstantin",
+          },
+          {
+            icon: "github-icon.svg",
+            icon_alt: "GitHub.",
+            link_Text: "GitHub.",
+            href: "https://github.com/DEV-Penguin-DEV",
+          },
+          {
+            icon: "pinterest-icon.svg",
+            icon_alt: "Pinterest.",
+            link_Text: "Pinterest",
+            href: "https://pin.it/1k5GkXD",
+          },
+          {
+            icon: "email-icon.svg",
+            icon_alt: "Email.",
+            link_Text: "k.lysenko@atomlc.com.ua",
+            href: "email:k.lysenko@atomlc.com.ua",
+          },
+        ],
+      },
+    },
+    skills: {
+      content: {
+        title: "Skills",
+        data: [
+          all_technologies.html,
+          all_technologies.css,
+          all_technologies.less,
+          all_technologies.sass,
+          all_technologies.js,
+          all_technologies.ts,
+          all_technologies.react,
+          all_technologies.vue,
+
+          all_technologies.spa,
+          all_technologies.gulp,
+          all_technologies.webpack,
+          all_technologies.node,
+          all_technologies.wp,
+          all_technologies.python,
+          all_technologies.docker,
+          all_technologies.php,
+
+          all_technologies.jquery,
+          all_technologies.git,
+          all_technologies.boostrap,
+          all_technologies.ps,
+          all_technologies.ai,
+          all_technologies.pr,
+          all_technologies.figma,
+          all_technologies.flutter_flow,
+          all_technologies.tilda,
+        ],
+      },
+    },
+    experience: {
+      content: {
+        title: "Work Experience",
+        companies: [
+          {
+            logo: "ione-logo.svg",
+            company_name: "IONE",
+            company_industry: "WEB studio",
+            position: "Frontend Developer",
+            period: "20.12.2022 - now",
+            mainTask: [
+              "Development of mobile applications on FlutterFlow",
+              "SPA development on pure JS",
+              "Development for WordPress",
+              "Website optimization",
+              "Writing a LandingPage from scratch",
+            ],
+          },
+          {
+            logo: "melon-logo.svg",
+            company_name: "MELON Team",
+            company_industry: "WEB studio",
+            position: "Frontend Developer",
+            period: "9.01.2023 - now",
+            mainTask: [
+              "Creating a variety of animations",
+              "Layout of interface elements",
+              "LandingPage Development",
+            ],
+          },
+          {
+            logo: "young-coder-school-logo.svg",
+            company_name: "Young Coder School",
+            company_industry: "Online IT school",
+            position: "Web development teacher",
+            period: "15.08.2022 - now",
+            mainTask: [
+              "Conducting personal lessons",
+              "Conducting group lessons (2-14 students)",
+              "Conducting trial lessons",
+            ],
+          },
+          {
+            logo: "math-is-easy-logo.svg",
+            company_name: "Math is Easy",
+            company_industry: "School of Mathematics",
+            position: "Sales Manager",
+            period: "15.12.2022 - 24.1.2023",
+            mainTask: ["Lead Generation", "Sales", "Conducting Promotions"],
+          },
+          {
+            logo: "takemotion-logo.svg",
+            company_name: "TakEmotion",
+            company_industry: "Digital agency",
+            position: "Frontend Developer",
+            period: "15.12.2021 - 3.3.2022",
+            mainTask: [
+              "Supervision of the development department",
+              "Creation of a corporate website",
+              "Creating websites for clients",
+            ],
+          },
+        ],
+        text: {
+          position_title: "position",
+          period_title: "Period",
+          main_task_title: "Main Task",
+        },
+      },
+    },
+    portfolio: {
+      content: {
+        title: "Portfolio",
+
+        projects: [
+          {
+            project_photo: "ione.jpg",
+            project_title:
+              "Optimization and redesign of the website of WEB studio i1-web",
+            project_time: "60-70 hours",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://i1-web.ru",
+            tag: "site",
+          },
+          {
+            project_photo: "iat.jpg",
+            project_title:
+              "Optimization and major changes to the IAT car dealer website",
+            project_time: "180 hours",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://iat.ru",
+            tag: "site",
+          },
+          {
+            project_photo: "keymap.jpg",
+            project_title: "Landing Page for the Ukrainian project",
+            project_time: "45-50 hours",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "http://keymap.ua/",
+            tag: "site",
+          },
+          {
+            project_photo: "pets-drom.jpg",
+            project_title: "Landing Page for NFT project",
+            project_time: "20-25 hours",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.less,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://dev-penguin-dev.github.io/pets-drome/build/",
+            tag: "site",
+          },
+          {
+            project_photo: "six-sities.jpg",
+            project_title: "Apartment rental service on react.ts",
+            project_time: "70 hours",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.spa,
+              all_technologies.ts,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+              all_technologies.react,
+            ],
+            link: "https://586823-six-cities-simple-11.vercel.app/",
+            tag: "project_tags",
+          },
+          {
+            project_photo: "big-trip.jpg",
+            project_title: "Vanilla JS travel service",
+            project_time: "80 hours",
+            technology_stack: [
+              all_technologies.spa,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://dev-penguin-dev.github.io/586823-big-trip-simple-18/build/",
+            tag: "site",
+          },
+          {
+            project_photo: "extrahop.jpg",
+            project_title: "One page design for the ExtraHop website",
+            project_time: "8 hours",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/joj6KJ06TjDz6wnE1km6C7/Landing-page-(ExtraHop)?node-id=27%3A170",
+            tag: "design",
+          },
+          {
+            project_photo: "extrahop-email.jpg",
+            project_title: "Email design for ExtraHop",
+            project_time: "6 hours",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/ly1VSwgs8ufd6Cwf2hLfyO/email-design-(ExtraHop)?type=design&node-id=50-2",
+            tag: "design",
+          },
+        ],
+        text: {
+          sort: {
+            sort_texts: ["All", "Sites", "Mobile Apps", "Design"],
+            sort_tags: [
+              "all",
+              PROJECT_TAGS.site,
+              PROJECT_TAGS.mobile_app,
+              PROJECT_TAGS.design,
+            ],
+          },
+          projects_texts: {
+            project_time_title: "Time: ",
+          },
+          button_more: "Show more",
+          button_hidden: "Hide",
+        },
+      },
+    },
+    languages: {
+      content: {
+        title: "Languages",
+        languages_list: [
+          {
+            language_name: "Russian",
+            level: "100%",
+            level_title: "c2",
+          },
+          {
+            language_name: "Ukrainian",
+            level: "100%",
+            level_title: "c2",
+          },
+          {
+            language_name: "English",
+            level: "75%",
+            level_title: "c1",
+          },
+          {
+            language_name: "French",
+            level: "50%",
+            level_title: "b1",
+          },
+          {
+            language_name: "German",
+            level: "30%",
+            level_title: "a2",
+          },
+        ],
+      },
+    },
+  },
+  de: {
+    menu: {
+      content: {
+        links: [
+          {
+            text: "Hauptseite",
+            link: "#main",
+          },
+          {
+            text: "Fertigkeiten",
+            link: "#skills",
+          },
+          {
+            text: "Erfahrung",
+            link: "#experience",
+          },
+          {
+            text: "Portfolio",
+            link: "#portfolio",
+          },
+          {
+            text: "Sprachen",
+            link: "#languages",
+          },
+        ],
+        normal_CV: {
+          title: "PDF-Version des Lebenslaufs",
+          link: "https://drive.google.com/drive/folders/19XawFv3n3j4N7Xs4LFPULcxUjihfvGsE",
+        },
+      },
+    },
+    first_screen: {
+      content: {
+        links: [
+          {
+            icon: "phone-icon.svg",
+            icon_alt: "Mobiltelefon.",
+            link_Text: "+41 79 827 21 64",
+            href: "tel:+41798272164",
+          },
+          {
+            icon: "telegram-icon.svg",
+            icon_alt: "telegram.",
+            link_Text: "@konstantin_lysenko_tg",
+            href: "https://t.me/konstantin_lysenko_tg",
+          },
+          {
+            icon: "linkedln-icon.svg",
+            icon_alt: "Linkedln.",
+            link_Text: "Linkedln",
+            href: "https://www.linkedin.com/in/lysenkokonstantin",
+          },
+          {
+            icon: "github-icon.svg",
+            icon_alt: "GitHub.",
+            link_Text: "GitHub.",
+            href: "https://github.com/DEV-Penguin-DEV",
+          },
+          {
+            icon: "pinterest-icon.svg",
+            icon_alt: "Pinterest",
+            link_Text: "Pinterest",
+            href: "https://pin.it/1k5GkXD",
+          },
+          {
+            icon: "email-icon.svg",
+            icon_alt: "E-Mail",
+            link_Text: "k.lysenko@atomlc.com.ua",
+            href: "email:k.lysenko@atomlc.com.ua",
+          },
+        ],
+      },
+    },
+    skills: {
+      content: {
+        title: "Fertigkeiten",
+        data: [
+          all_technologies.html,
+          all_technologies.css,
+          all_technologies.less,
+          all_technologies.sass,
+          all_technologies.js,
+          all_technologies.ts,
+          all_technologies.react,
+          all_technologies.vue,
+
+          all_technologies.spa,
+          all_technologies.gulp,
+          all_technologies.webpack,
+          all_technologies.node,
+          all_technologies.wp,
+          all_technologies.python,
+          all_technologies.docker,
+          all_technologies.php,
+
+          all_technologies.jquery,
+          all_technologies.git,
+          all_technologies.boostrap,
+          all_technologies.ps,
+          all_technologies.ai,
+          all_technologies.pr,
+          all_technologies.figma,
+          all_technologies.flutter_flow,
+          all_technologies.tilda,
+        ],
+      },
+    },
+    experience: {
+      content: {
+        title: "Berufserfahrung",
+        companies: [
+          {
+            logo: "ione-logo.svg",
+            company_name: "IONE",
+            company_industry: "WEB Studio",
+            position: "Frontend Entwickler",
+            period: "20.12.2022 - jetzt",
+            mainTask: [
+              "Mobile Anwendungsentwicklung auf FlutterFlow",
+              "SPA-Entwicklung auf purem JS",
+              "Entwicklung auf WordPress",
+              "Website-Optimierung",
+              "Eine LandingPage von Grund auf schreiben",
+            ],
+          },
+          {
+            logo: "melon-logo.svg",
+            company_name: "MELON Team",
+            company_industry: "WEB Studio",
+            position: "Frontend-Entwickler",
+            period: "9.01.2023 - jetzt",
+            mainTask: [
+              "Erstellen einer Vielzahl von Animationen",
+              "Layout der Interface-Elemente",
+              "LandingPage-Entwicklung",
+            ],
+          },
+          {
+            logo: "young-coder-school-logo.svg",
+            company_name: "Young Coder School",
+            company_industry: "Online IT Schule",
+            position: "Lehrer für Webentwicklung",
+            period: "15.08.2022 - jetzt",
+            mainTask: [
+              "Durchführung von Einzelunterricht",
+              "Durchführung von Gruppenunterricht (2-14 Schüler)",
+              "Probeunterricht durchführen",
+            ],
+          },
+          {
+            logo: "math-is-easy-logo.svg",
+            company_name: "MathCeProsto",
+            company_industry: "Mathe-Schule",
+            position: "Verkaufsleiter",
+            period: "15.12.2022 - 24.1.2023",
+            mainTask: ["Lead Generation", "Sales", "Running Promotions"],
+          },
+          {
+            logo: "takemotion-logo.svg",
+            company_name: "TakEmotion",
+            company_industry: "Digitalagentur",
+            position: "Frontend-Entwickler",
+            period: "15.12.2021 - 3.3.2022",
+            mainTask: [
+              "Entwicklungsabteilung Kuration",
+              "Erstellung von Unternehmenswebsites",
+              "Erstellung von Websites für Kunden",
+            ],
+          },
+        ],
+        text: {
+          position_title: "Position",
+          period_title: "Wann?",
+          main_task_title: "Hauptaufgaben",
+        },
+      },
+    },
+    portfolio: {
+      content: {
+        title: "Portfolio",
+
+        projects: [
+          {
+            project_photo: "ione.jpg",
+            project_title:
+              "I1-web studio WEB-Site-Optimierung und Neugestaltung",
+            project_time: "60-70 Stunden",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://i1-web.ru",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "iat.jpg",
+            project_title:
+              "Optimierung und Einführung wesentlicher Änderungen auf der Website des IAT-Autohauses",
+            project_time: "180 Stunden",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://iat.ru",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "keymap.jpg",
+            project_title: "Landingpage für ukrainisches Projekt",
+            project_time: "45-50 Stunden",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "http://keymap.ua/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "pets-drom.jpg",
+            project_title: "Landingpage für NFT-Projekt",
+            project_time: "20-25 Stunden",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.less,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://dev-penguin-dev.github.io/pets-drome/build/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "six-sities.jpg",
+            project_title: "Wohnungsvermietungsservice auf React.ts",
+            project_time: "70 Stunden",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.spa,
+              all_technologies.ts,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+              all_technologies.react,
+            ],
+            link: "https://586823-six-cities-simple-11.vercel.app/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "big-trip.jpg",
+            project_title: "Vanilla JS Reiseservice",
+            project_time: "80 Stunden",
+            technology_stack: [
+              all_technologies.spa,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://dev-penguin-dev.github.io/586823-big-trip-simple-18/build/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "extrahop.jpg",
+            project_title: "Ein-Seiten-Design für die ExtraHop-Website",
+            project_time: "8 Stunden",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/joj6KJ06TjDz6wnE1km6C7/Landing-page-(ExtraHop)?node-id=27%3A170",
+            tag: PROJECT_TAGS.design,
+          },
+          {
+            project_photo: "extrahop-email.jpg",
+            project_title: "E-Mail-Design für ExtraHop",
+            project_time: "6 Stunden",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/ly1VSwgs8ufd6Cwf2hLfyO/email-design-(ExtraHop)?type=design&node-id=50-2",
+            tag: PROJECT_TAGS.design,
+          },
+        ],
+        text: {
+          sort: {
+            sort_texts: ["Alle", "Sites", "Mobile Apps", "Design"],
+            sort_tags: [
+              "alle",
+              PROJECT_TAGS.site,
+              PROJECT_TAGS.mobile_app,
+              PROJECT_TAGS.design,
+            ],
+          },
+          projects_texts: {
+            project_time_title: "Zeit:",
+          },
+          button_more: "Mehr anzeigen",
+          button_hidden: "Ausblenden",
+        },
+      },
+    },
+    languages: {
+      content: {
+        title: "Sprachen",
+        languages_list: [
+          {
+            language_name: "Russisch",
+            level: "100 %",
+            level_title: "c2",
+          },
+          {
+            language_name: "Ukrainisch",
+            level: "100 %",
+            level_title: "c2",
+          },
+          {
+            language_name: "Englisch",
+            level: "75 %",
+            level_title: "c1",
+          },
+          {
+            language_name: "Französisch",
+            level: "50 %",
+            level_title: "b1",
+          },
+          {
+            language_name: "Deutsch",
+            level: "30 %",
+            level_title: "a2",
+          },
+        ],
+      },
+    },
+  },
+  fr: {
+    menu: {
+      content: {
+        links: [
+          {
+            text: "Accueil",
+            link: "#main",
+          },
+          {
+            text: "compétences",
+            link: "#skills",
+          },
+          {
+            text: "Expérience professionnelle",
+            link: "#experience",
+          },
+          {
+            text: "Portfolio",
+            link: "#portfolio",
+          },
+          {
+            text: "Langues",
+            link: "#languages",
+          },
+        ],
+        normal_CV: {
+          title: "Version PDF du CV",
+          link: "https://drive.google.com/drive/folders/19XawFv3n3j4N7Xs4LFPULcxUjihfvGsE",
+        },
+      },
+    },
+    first_screen: {
+      content: {
+        links: [
+          {
+            icon: "phone-icon.svg",
+            icon_alt: "Téléphone portable.",
+            link_Text: "+41 79 827 21 64",
+            href: "tél:+41798272164",
+          },
+          {
+            icon: "telegram-icon.svg",
+            icon_alt: "Télégramme.",
+            link_Text: "@konstantin_lysenko_tg",
+            href: "https://t.me/konstantin_lysenko_tg",
+          },
+          {
+            icon: "linkedln-icon.svg",
+            icon_alt: "LinkedIn.",
+            link_Text: "LinkedIn",
+            href: "https://www.linkedin.com/in/lysenkokonstantin",
+          },
+          {
+            icon: "github-icon.svg",
+            icon_alt: "GitHub.",
+            link_Text: "github",
+            href: "https://github.com/DEV-Penguin-DEV",
+          },
+          {
+            icon: "pinterest-icon.svg",
+            icon_alt: "Pinterest.",
+            link_Text: "Pinterest",
+            href: "https://pin.it/1k5GkXD",
+          },
+          {
+            icon: "email-icon.svg",
+            icon_alt: "E-mail.",
+            link_Text: "k.lysenko@atomlc.com.ua",
+            href: "e-mail:k.lysenko@atomlc.com.ua",
+          },
+        ],
+      },
+    },
+    skills: {
+      content: {
+        title: "Compétences",
+        data: [
+          all_technologies.html,
+          all_technologies.css,
+          all_technologies.less,
+          all_technologies.sass,
+          all_technologies.js,
+          all_technologies.ts,
+          all_technologies.react,
+          all_technologies.vue,
+
+          all_technologies.spa,
+          all_technologies.gulp,
+          all_technologies.webpack,
+          all_technologies.node,
+          all_technologies.wp,
+          all_technologies.python,
+          all_technologies.docker,
+          all_technologies.php,
+
+          all_technologies.jquery,
+          all_technologies.git,
+          all_technologies.boostrap,
+          all_technologies.ps,
+          all_technologies.ai,
+          all_technologies.pr,
+          all_technologies.figma,
+          all_technologies.flutter_flow,
+          all_technologies.tilda,
+        ],
+      },
+    },
+    experience: {
+      content: {
+        title: "Expérience professionnelle",
+        entreprises: [
+          {
+            logo: "ione-logo.svg",
+            company_name: "ONE",
+            company_industry: "studio WEB",
+            position: "Développeur Frontend",
+            period: "20/12/2022 - maintenant",
+            mainTask: [
+              "Développement d'applications mobiles sur FlutterFlow",
+              "Développement SPA sur JS pur",
+              "Développement WordPress",
+              "Optimisation du site Web",
+              "Écrire une page de destination à partir de zéro",
+            ],
+          },
+          {
+            logo: "melon-logo.svg",
+            company_name: "Équipe MELON",
+            company_industry: "studio WEB",
+            position: "Développeur Frontend",
+            period: "9.01.2023 - maintenant",
+            mainTask: [
+              "Créer diverses animations",
+              "Mise en page des éléments d'interface",
+              "Développement de pages de destination",
+            ],
+          },
+          {
+            logo: "jeune-coder-school-logo.svg",
+            company_name: "École des jeunes codeurs",
+            company_industry: "École d'informatique en ligne",
+            position: "Formateur en développement Web",
+            period: "15.08.2022 - maintenant",
+            mainTask: [
+              "Donner des cours particuliers",
+              "Animation de cours collectifs (2-14 étudiants)",
+              "Donner des leçons d'essai",
+            ],
+          },
+          {
+            logo: "math-is-easy-logo.svg",
+            company_name: "MatzeProsto",
+            company_industry: "École de mathématiques",
+            poste: "Responsable commercial",
+            period: "15.12.2022 - 24.1.2023",
+            mainTask: ["Générer des prospects", "Ventes", "Promotions"],
+          },
+          {
+            logo: "takemotion-logo.svg",
+            company_name: "TakEmotion",
+            company_industry: "Agence numérique",
+            position: "Développeur Frontend",
+            period: "15.12.2021 - 3.3.2022",
+            mainTask: [
+              "Gestion du département développement",
+              "Création d'un site internet d'entreprise",
+              "Création de sites Web pour les clients",
+            ],
+          },
+        ],
+        text: {
+          position_title: "Position",
+          period_title: "Quand ?",
+          main_task_title: "Tâches principales",
+        },
+      },
+    },
+    portfolio: {
+      content: {
+        title: " Portfolio ",
+
+        projects: [
+          {
+            project_photo: "ione.jpg",
+            project_title: "Optimisation et refonte du site WEB I1-web studio",
+            project_time: "60-70 heures",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://i1-web.ru",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "iat.jpg",
+            project_title:
+              "Optimisation et introduction de changements majeurs sur le site Internet du concessionnaire automobile IAT",
+            project_time: "180 heures",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://iat.ru",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "keymap.jpg",
+            project_title: "Page de destination du projet ukrainien",
+            project_time: "45-50 heures",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "http://keymap.ua/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "pets-drom.jpg",
+            project_title: "Page de destination du projet NFT",
+            project_time: "20-25 heures",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.less,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://dev-penguin-dev.github.io/pets-drome/build/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "six-sities.jpg",
+            project_title: "Service de location d'appartements sur React.ts",
+            project_time: "70 heures",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.spa,
+              all_technologies.ts,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+              all_technologies.react,
+            ],
+            link: "https://586823-six-cities-simple-11.vercel.app/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "grand-trip.jpg",
+            project_title: "Service de voyage Vanilla JS",
+            project_time: "80 heures",
+            technology_stack: [
+              all_technologies.spa,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://dev-penguin-dev.github.io/586823-big-trip-simple-18/build/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "extrahop.jpg",
+            project_title: "Conception d'une page pour le site Web ExtraHop",
+            project_time: "8 heures",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/joj6KJ06TjDz6wnE1km6C7/Landing-page-(ExtraHop)?node-id=27%3A170",
+            tag: PROJECT_TAGS.design,
+          },
+          {
+            project_photo: "extrahop-email.jpg",
+            project_title: "Conception d'e-mails pour ExtraHop",
+            project_time: "6 heures",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/ly1VSwgs8ufd6Cwf2hLfyO/email-design-(ExtraHop)?type=design&node-id=50-2",
+            tag: PROJECT_TAGS.design,
+          },
+        ],
+        text: {
+          sort: {
+            sort_texts: ["Tous", "Sites", "Applications mobiles", "Conception"],
+            sort_tags: [
+              "tous",
+              PROJECT_TAGS.site,
+              PROJECT_TAGS.mobile_app,
+              PROJECT_TAGS.design,
+            ],
+          },
+          projects_texts: {
+            project_time_title: "Heure : ",
+          },
+          button_more: "Afficher plus",
+          bouton_hidden: "Masquer",
+        },
+      },
+    },
+    languages: {
+      content: {
+        title: "Langues",
+        languages_list: [
+          {
+            language_name: "Russe",
+            level: "100%",
+            level_title: "c2",
+          },
+          {
+            language_name: "ukrainien",
+            level: "100%",
+            level_title: "c2",
+          },
+          {
+            language_name: "Anglais",
+            level: "75%",
+            level_title: "c1",
+          },
+          {
+            language_name: "Français",
+            level: "50%",
+            level_title: "b1",
+          },
+          {
+            language_name: "Allemand",
+            level: "30%",
+            level_title: "a2",
+          },
+        ],
+      },
+    },
+  },
 };

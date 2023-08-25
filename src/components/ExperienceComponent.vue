@@ -18,7 +18,7 @@
         <h4 class="experience__position-title experience__title--h4">
           {{ positionTitle }}
         </h4>
-        <p class="experience__position">{{ companyIndustry }}</p>
+        <p class="experience__position">{{ position }}</p>
       </div>
 
       <div class="experience__period-container">

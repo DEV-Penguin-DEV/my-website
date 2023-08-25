@@ -1,10 +1,10 @@
 <template>
   <nav class="portfolio-sort">
-    <p class="portfolio-sort__select"></p>
+    <p class="portfolio-sort__select">{{ sort.sort_texts[0] }}</p>
 
     <ul class="portfolio-sort__list">
       <li
-        class="portfolio-sort__item"
+        :class="`portfolio-sort__item ${index == 0 ? 'active' : ''}`"
         v-for="(sortText, index) in sort.sort_texts"
         :key="index"
       >
@@ -42,11 +42,6 @@ export default {
     }
     const sortElement = document.querySelector(".portfolio-sort");
     const sortButton = document.querySelector(".portfolio-sort__select");
-    const activeSort = document.querySelector(".portfolio-sort__button.active");
-    const activeButtonContainer = activeSort.closest(".portfolio-sort__item");
-    activeButtonContainer.classList.add("active");
-
-    sortButton.textContent = activeSort.textContent;
 
     sortButton.addEventListener("click", () => {
       sortElement.classList.toggle("open");
@@ -67,6 +62,7 @@ function onSortClick(evt) {
     document
       .querySelector(".portfolio-sort__item.active")
       .classList.remove("active");
+
     const activeButtonContainer = target.closest(".portfolio-sort__item");
     activeButtonContainer.classList.add("active");
     mobileSelect.textContent = target.textContent;
@@ -156,13 +152,13 @@ function sortEvent() {
 
 .portfolio-sort__select {
   height: 40px;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 15px;
   padding-right: 43px;
   transition: 0.7s;
   position: relative;
+  display: none;
 
   &::before {
     @include default-pseudo-element(24px);
@@ -172,6 +168,10 @@ function sortEvent() {
     background-size: contain;
     cursor: pointer;
     transition: 0.5s;
+  }
+
+  @media (max-width: $phone-size) {
+    display: flex;
   }
 }
 
