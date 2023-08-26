@@ -92,10 +92,16 @@ export default {
     };
   },
   mounted() {
+    const mediaQuery = window.matchMedia("(max-width: 440px)");
     const buttons = document.querySelectorAll(".open-mobile-menu-button");
     const menuLinks = document.querySelectorAll(".side-menu__link");
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
+        if (mediaQuery.matches) {
+          document.querySelector("html").style.overflow =
+            button.classList.contains("open") ? "" : "hidden";
+        }
+
         button.classList.toggle("open");
         this.$refs.menu.classList.toggle("open");
       });
@@ -140,13 +146,13 @@ export default {
     const mobileOpenButton = document.querySelector(
       ".open-mobile-menu-button--mobile"
     );
-    const mediaQuery = window.matchMedia("(max-width: 440px)");
     if (!mediaQuery.matches) {
       return;
     }
     menuLinks.forEach((menuLink) => {
       menuLink.addEventListener("click", () => {
         mobileOpenButton.classList.remove("open");
+        document.querySelector("html").style.overflow = "";
         this.$refs.menu.classList.remove("open");
       });
     });
@@ -167,6 +173,7 @@ export default {
 
   @media (max-width: $phone-size) {
     margin: 0;
+    padding-top: 25px;
   }
 }
 
@@ -179,6 +186,10 @@ export default {
   top: 20px;
   right: 20px;
   z-index: 9998;
+
+  @media (max-width: $phone-size) {
+    top: 25px;
+  }
 
   & > div,
   & > div::before,

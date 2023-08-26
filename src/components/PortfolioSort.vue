@@ -218,7 +218,9 @@ function sortEvent() {
   height: fit-content;
 
   &.active {
-    display: none;
+    @media (max-width: $phone-size) {
+      display: none;
+    }
   }
 }
 </style>

@@ -102,6 +102,7 @@ const all_technologies = {
 };
 
 const PROJECT_TAGS = {
+  all: "all",
   site: "site",
   mobile_app: "mobile app",
   design: "desing",
@@ -409,7 +410,7 @@ export const db = {
           sort: {
             sort_texts: ["Всё", "Sites", "Mobile Apps", "Design"],
             sort_tags: [
-              "all",
+              PROJECT_TAGS.all,
               PROJECT_TAGS.site,
               PROJECT_TAGS.mobile_app,
               PROJECT_TAGS.design,
@@ -757,7 +758,7 @@ export const db = {
           sort: {
             sort_texts: ["Все", "Sites", "Mobile Apps", "Design"],
             sort_tags: [
-              "all",
+              PROJECT_TAGS.all,
               PROJECT_TAGS.site,
               PROJECT_TAGS.mobile_app,
               PROJECT_TAGS.design,
@@ -1003,7 +1004,7 @@ export const db = {
               all_technologies.figma,
             ],
             link: "https://i1-web.ru",
-            tag: "site",
+            tag: PROJECT_TAGS.site,
           },
           {
             project_photo: "iat.jpg",
@@ -1022,7 +1023,7 @@ export const db = {
               all_technologies.figma,
             ],
             link: "https://iat.ru",
-            tag: "site",
+            tag: PROJECT_TAGS.site,
           },
           {
             project_photo: "keymap.jpg",
@@ -1037,7 +1038,7 @@ export const db = {
               all_technologies.figma,
             ],
             link: "http://keymap.ua/",
-            tag: "site",
+            tag: PROJECT_TAGS.site,
           },
           {
             project_photo: "pets-drom.jpg",
@@ -1052,7 +1053,7 @@ export const db = {
               all_technologies.figma,
             ],
             link: "https://dev-penguin-dev.github.io/pets-drome/build/",
-            tag: "site",
+            tag: PROJECT_TAGS.site,
           },
           {
             project_photo: "six-sities.jpg",
@@ -1069,7 +1070,7 @@ export const db = {
               all_technologies.react,
             ],
             link: "https://586823-six-cities-simple-11.vercel.app/",
-            tag: "project_tags",
+            tag: PROJECT_TAGS.site,
           },
           {
             project_photo: "big-trip.jpg",
@@ -1083,7 +1084,7 @@ export const db = {
               all_technologies.figma,
             ],
             link: "https://dev-penguin-dev.github.io/586823-big-trip-simple-18/build/",
-            tag: "site",
+            tag: PROJECT_TAGS.site,
           },
           {
             project_photo: "extrahop.jpg",
@@ -1091,7 +1092,7 @@ export const db = {
             project_time: "8 hours",
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/joj6KJ06TjDz6wnE1km6C7/Landing-page-(ExtraHop)?node-id=27%3A170",
-            tag: "design",
+            tag: PROJECT_TAGS.design,
           },
           {
             project_photo: "extrahop-email.jpg",
@@ -1099,14 +1100,14 @@ export const db = {
             project_time: "6 hours",
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/ly1VSwgs8ufd6Cwf2hLfyO/email-design-(ExtraHop)?type=design&node-id=50-2",
-            tag: "design",
+            tag: PROJECT_TAGS.design,
           },
         ],
         text: {
           sort: {
             sort_texts: ["All", "Sites", "Mobile Apps", "Design"],
             sort_tags: [
-              "all",
+              PROJECT_TAGS.all,
               PROJECT_TAGS.site,
               PROJECT_TAGS.mobile_app,
               PROJECT_TAGS.design,
@@ -1455,7 +1456,7 @@ export const db = {
           sort: {
             sort_texts: ["Alle", "Sites", "Mobile Apps", "Design"],
             sort_tags: [
-              "alle",
+              PROJECT_TAGS.all,
               PROJECT_TAGS.site,
               PROJECT_TAGS.mobile_app,
               PROJECT_TAGS.design,
@@ -1803,7 +1804,7 @@ export const db = {
           sort: {
             sort_texts: ["Tous", "Sites", "Applications mobiles", "Conception"],
             sort_tags: [
-              "tous",
+              PROJECT_TAGS.all,
               PROJECT_TAGS.site,
               PROJECT_TAGS.mobile_app,
               PROJECT_TAGS.design,

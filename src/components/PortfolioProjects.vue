@@ -18,7 +18,7 @@
   <button
     @click="onMoreButtonClick"
     class="portfolio-projects__button"
-    v-if="DB.projects.length > 4"
+    v-if="filterProjects(this.sortType).length > 4"
   >
     {{ `${buttonText ? DB.text.button_more : DB.text.button_hidden}` }}
   </button>
@@ -52,6 +52,7 @@ export default {
   },
   methods: {
     onMoreButtonClick() {
+      console.log("1");
       this.shownItemsCount += 2;
 
       this.changeMoreButtonText();
