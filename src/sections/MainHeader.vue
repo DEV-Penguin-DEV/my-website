@@ -1,7 +1,7 @@
 <template>
   <header class="header container">
     <img class="header__logo" src="../../public/img/logo.svg" alt="Logo." />
-    <a :href="DB.normal_CV.link" class="header__link">{{
+    <a :href="DB.normal_CV.link" class="header__link" target="_blank">{{
       DB.normal_CV.title
     }}</a>
     <button
@@ -63,7 +63,7 @@
         </ul>
       </div>
 
-      <a :href="DB.normal_CV.link" class="side-menu__pdf">{{
+      <a :href="DB.normal_CV.link" class="side-menu__pdf" target="_blank">{{
         DB.normal_CV.title
       }}</a>
 
@@ -99,6 +99,8 @@ export default {
       button.addEventListener("click", () => {
         if (mediaQuery.matches) {
           document.querySelector("html").style.overflow =
+            button.classList.contains("open") ? "" : "hidden";
+          document.querySelector("body").style.overflow =
             button.classList.contains("open") ? "" : "hidden";
         }
 
@@ -153,6 +155,7 @@ export default {
       menuLink.addEventListener("click", () => {
         mobileOpenButton.classList.remove("open");
         document.querySelector("html").style.overflow = "";
+        document.querySelector("body").style.overflow = "";
         this.$refs.menu.classList.remove("open");
       });
     });
@@ -292,7 +295,7 @@ export default {
 
   @media (max-width: $phone-size) {
     margin: 0 auto;
-    margin-bottom: 45px;
+    margin-bottom: 20vh;
     font-size: 6.8vw;
     width: fit-content;
     display: block;
@@ -418,7 +421,7 @@ export default {
   }
 
   @media (max-width: $phone-size) {
-    top: -100vh;
+    top: -110vh;
     min-width: 0;
     max-width: none;
     width: 100vw;
@@ -427,6 +430,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 110vh;
 
     &::-webkit-scrollbar {
       width: 0; /* ширина полосы прокрутки */

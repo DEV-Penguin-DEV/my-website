@@ -1167,7 +1167,7 @@ export const db = {
             link: "#skills",
           },
           {
-            text: "Erfahrung",
+            text: "Berufserfahrung",
             link: "#experience",
           },
           {
@@ -1613,7 +1613,7 @@ export const db = {
     experience: {
       content: {
         title: "Expérience professionnelle",
-        entreprises: [
+        companies: [
           {
             logo: "ione-logo.svg",
             company_name: "ONE",
@@ -1641,7 +1641,7 @@ export const db = {
             ],
           },
           {
-            logo: "jeune-coder-school-logo.svg",
+            logo: "young-coder-school-logo.svg",
             company_name: "École des jeunes codeurs",
             company_industry: "École d'informatique en ligne",
             position: "Formateur en développement Web",
@@ -1656,7 +1656,7 @@ export const db = {
             logo: "math-is-easy-logo.svg",
             company_name: "MatzeProsto",
             company_industry: "École de mathématiques",
-            poste: "Responsable commercial",
+            position: "Responsable commercial",
             period: "15.12.2022 - 24.1.2023",
             mainTask: ["Générer des prospects", "Ventes", "Promotions"],
           },
@@ -1682,7 +1682,7 @@ export const db = {
     },
     portfolio: {
       content: {
-        title: " Portfolio ",
+        title: "Portfolio",
 
         projects: [
           {
@@ -1811,7 +1811,7 @@ export const db = {
             ],
           },
           projects_texts: {
-            project_time_title: "Heure : ",
+            project_time_title: "Heure: ",
           },
           button_more: "Afficher plus",
           bouton_hidden: "Masquer",
