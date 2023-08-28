@@ -1305,7 +1305,7 @@ export const db = {
           },
           {
             logo: "math-is-easy-logo.svg",
-            company_name: "MathCeProsto",
+            company_name: "MathIsEasy",
             company_industry: "Mathe-Schule",
             position: "Verkaufsleiter",
             period: "15.12.2022 - 24.1.2023",
@@ -1616,7 +1616,7 @@ export const db = {
         companies: [
           {
             logo: "ione-logo.svg",
-            company_name: "ONE",
+            company_name: "IONE",
             company_industry: "studio WEB",
             position: "Développeur Frontend",
             period: "20/12/2022 - maintenant",
@@ -1630,7 +1630,7 @@ export const db = {
           },
           {
             logo: "melon-logo.svg",
-            company_name: "Équipe MELON",
+            company_name: "MELON TEAM",
             company_industry: "studio WEB",
             position: "Développeur Frontend",
             period: "9.01.2023 - maintenant",
@@ -1642,7 +1642,7 @@ export const db = {
           },
           {
             logo: "young-coder-school-logo.svg",
-            company_name: "École des jeunes codeurs",
+            company_name: "Young Coder School",
             company_industry: "École d'informatique en ligne",
             position: "Formateur en développement Web",
             period: "15.08.2022 - maintenant",
@@ -1654,7 +1654,7 @@ export const db = {
           },
           {
             logo: "math-is-easy-logo.svg",
-            company_name: "MatzeProsto",
+            company_name: "MathIsEasy",
             company_industry: "École de mathématiques",
             position: "Responsable commercial",
             period: "15.12.2022 - 24.1.2023",
