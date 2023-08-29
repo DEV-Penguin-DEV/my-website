@@ -1,10 +1,10 @@
 const all_technologies = {
   html: {
-    img: "html-icon.svg",
+    img: "html-icon.png",
     alt: "HTML5.",
   },
   css: {
-    img: "css-icon.svg",
+    img: "css-icon.png",
     alt: "CSS3.",
   },
   less: {
@@ -16,7 +16,7 @@ const all_technologies = {
     alt: "SASS.",
   },
   js: {
-    img: "js-icon.svg",
+    img: "js-icon.png",
     alt: "JavaScript.",
   },
   ts: {
@@ -52,7 +52,7 @@ const all_technologies = {
     alt: "WordPress.",
   },
   python: {
-    img: "python-icon.svg",
+    img: "python-icon.png",
     alt: "Python.",
   },
   docker: {
@@ -72,7 +72,7 @@ const all_technologies = {
     alt: "Git.",
   },
   boostrap: {
-    img: "bootstrap-icon.svg",
+    img: "bootstrap-icon.png",
     alt: "Bootstrap.",
   },
   ps: {

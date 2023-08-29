@@ -123,7 +123,7 @@ a {
   margin-left: 48px;
   margin-bottom: 5vw;
   display: block;
-  width: min-content;
+  width: fit-content;
   position: relative;
 
   @media (max-width: $tablet-size) {
