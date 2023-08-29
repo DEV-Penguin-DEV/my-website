@@ -1,11 +1,17 @@
 <template>
   <div :class="`portfolio-project ${projectTag}`">
     <a :href="projectLink" target="_blank" rel="noopener noreferrer">
-      <img
-        :src="`/img/${imgSrc}`"
-        :alt="projectName"
-        class="portfolio-project__img"
-      />
+      <picture>
+        <source
+          :srcset="`/img/webp/${imgSrc.replace(/\.jpg$/, '.webp')}`"
+          type="image/webp"
+        />
+        <img
+          :src="`/img/${imgSrc}`"
+          :alt="projectName"
+          class="portfolio-project__img"
+        />
+      </picture>
     </a>
 
     <div class="portfolio-project__text-content">

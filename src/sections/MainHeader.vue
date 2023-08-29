@@ -40,7 +40,7 @@
                 </button>
                 <img
                   :src="`/img/${language}.svg`"
-                  :alt="language"
+                  :alt="`${language} language`"
                   class="language-select__img"
                 />
               </li>

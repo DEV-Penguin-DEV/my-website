@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+Allow: *.js
+Allow: *.css
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
