@@ -234,18 +234,7 @@ export const db = {
               "Написание LandingPage с нуля",
             ],
           },
-          {
-            logo: "melon-logo.svg",
-            company_name: "MELON Team",
-            company_industry: "WEB студия",
-            position: "Frontend Developer",
-            period: "9.01.2023 - сейчас",
-            mainTask: [
-              "Создание разнообразной анимации",
-              "Вёрстка интерфейсных элементов",
-              "Разработка LandingPage",
-            ],
-          },
+
           {
             logo: "young-coder-school-logo.svg",
             company_name: "Young Coder School",
@@ -256,6 +245,18 @@ export const db = {
               "Проведение личных уроков",
               "Проведение групповых уроков (2-14 учеников)",
               "Проведение пробных уроков",
+            ],
+          },
+          {
+            logo: "melon-logo.svg",
+            company_name: "MELON Team",
+            company_industry: "WEB студия",
+            position: "Frontend Developer",
+            period: "9.01.2023 - 1.07.2023",
+            mainTask: [
+              "Создание разнообразной анимации",
+              "Вёрстка интерфейсных элементов",
+              "Разработка LandingPage",
             ],
           },
           {
@@ -313,7 +314,7 @@ export const db = {
             project_photo: "iat.jpg",
             project_title:
               "Оптимизация и внесение крупных изменений на сайт автодилера IAT",
-            project_time: "180 часов",
+            project_time: "396 часов",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -326,6 +327,25 @@ export const db = {
               all_technologies.figma,
             ],
             link: "https://iat.ru",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "marula.jpg",
+            project_title:
+              "Оптимизация, внесение крупных изменений в front часть и написание backend для обработки заявок для сети отелей",
+            project_time: "70 часов",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://marulapark.com/en/",
             tag: PROJECT_TAGS.site,
           },
           {
@@ -582,18 +602,7 @@ export const db = {
               "Написання LandingPage з нуля",
             ],
           },
-          {
-            logo: "melon-logo.svg",
-            company_name: "MELON Team",
-            company_industry: "WEB студія",
-            position: "Frontend Developer",
-            period: "9.01.2023 - зараз",
-            mainTask: [
-              "Створення різноманітної анімації",
-              "Верстка інтерфейсних елементів",
-              "Розробка LandingPage",
-            ],
-          },
+
           {
             logo: "young-coder-school-logo.svg",
             company_name: "Young Coder School",
@@ -604,6 +613,18 @@ export const db = {
               "Проведення особистих уроків",
               "Проведення групових уроків (2-14 учнів)",
               "Проведення пробних уроків",
+            ],
+          },
+          {
+            logo: "melon-logo.svg",
+            company_name: "MELON Team",
+            company_industry: "WEB студія",
+            position: "Frontend Developer",
+            period: "9.01.2023 - 1.07.2023",
+            mainTask: [
+              "Створення різноманітної анімації",
+              "Верстка інтерфейсних елементів",
+              "Розробка LandingPage",
             ],
           },
           {
@@ -640,6 +661,40 @@ export const db = {
 
         projects: [
           {
+            project_photo: "marula.jpg",
+            project_title:
+              "Оптимізація, внесення великих змін у front частину та написання backend для обробки заявок для мережі готелів",
+            project_time: "70 годин",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://marulapark.com/en/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "keymap.jpg",
+            project_title: "Landing Page для Українського проекту",
+            project_time: "45-50 годин",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "http://keymap.ua/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
             project_photo: "ione.jpg",
             project_title: "Оптимізація та редизайн сайту WEB студії i1-web",
             project_time: "60-70 годин",
@@ -661,7 +716,7 @@ export const db = {
             project_photo: "iat.jpg",
             project_title:
               "Оптимізація та внесення великих змін на сайт автодилера IAT",
-            project_time: "180 годин",
+            project_time: "396 годин",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -674,21 +729,6 @@ export const db = {
               all_technologies.figma,
             ],
             link: "https://iat.ru",
-            tag: PROJECT_TAGS.site,
-          },
-          {
-            project_photo: "keymap.jpg",
-            project_title: "Landing Page для Українського проекту",
-            project_time: "45-50 годин",
-            technology_stack: [
-              all_technologies.html,
-              all_technologies.sass,
-              all_technologies.js,
-              all_technologies.webpack,
-              all_technologies.git,
-              all_technologies.figma,
-            ],
-            link: "http://keymap.ua/",
             tag: PROJECT_TAGS.site,
           },
           {
@@ -930,18 +970,7 @@ export const db = {
               "Writing a LandingPage from scratch",
             ],
           },
-          {
-            logo: "melon-logo.svg",
-            company_name: "MELON Team",
-            company_industry: "WEB studio",
-            position: "Frontend Developer",
-            period: "9.01.2023 - now",
-            mainTask: [
-              "Creating a variety of animations",
-              "Layout of interface elements",
-              "LandingPage Development",
-            ],
-          },
+
           {
             logo: "young-coder-school-logo.svg",
             company_name: "Young Coder School",
@@ -952,6 +981,18 @@ export const db = {
               "Conducting personal lessons",
               "Conducting group lessons (2-14 students)",
               "Conducting trial lessons",
+            ],
+          },
+          {
+            logo: "melon-logo.svg",
+            company_name: "MELON Team",
+            company_industry: "WEB studio",
+            position: "Frontend Developer",
+            period: "9.01.2023 - 1.07.2023",
+            mainTask: [
+              "Creating a variety of animations",
+              "Layout of interface elements",
+              "LandingPage Development",
             ],
           },
           {
@@ -988,6 +1029,40 @@ export const db = {
 
         projects: [
           {
+            project_photo: "marula.jpg",
+            project_title:
+              "Optimization, making major changes to the front part and writing a backend for processing applications for a hotel",
+            project_time: "70 hours",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://marulapark.com/en/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "keymap.jpg",
+            project_title: "Landing Page for the Ukrainian project",
+            project_time: "45-50 hours",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "http://keymap.ua/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
             project_photo: "ione.jpg",
             project_title:
               "Optimization and redesign of the website of WEB studio i1-web",
@@ -1010,7 +1085,7 @@ export const db = {
             project_photo: "iat.jpg",
             project_title:
               "Optimization and major changes to the IAT car dealer website",
-            project_time: "180 hours",
+            project_time: "396 hours",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -1023,21 +1098,6 @@ export const db = {
               all_technologies.figma,
             ],
             link: "https://iat.ru",
-            tag: PROJECT_TAGS.site,
-          },
-          {
-            project_photo: "keymap.jpg",
-            project_title: "Landing Page for the Ukrainian project",
-            project_time: "45-50 hours",
-            technology_stack: [
-              all_technologies.html,
-              all_technologies.sass,
-              all_technologies.js,
-              all_technologies.webpack,
-              all_technologies.git,
-              all_technologies.figma,
-            ],
-            link: "http://keymap.ua/",
             tag: PROJECT_TAGS.site,
           },
           {
@@ -1280,18 +1340,6 @@ export const db = {
             ],
           },
           {
-            logo: "melon-logo.svg",
-            company_name: "MELON Team",
-            company_industry: "WEB Studio",
-            position: "Frontend-Entwickler",
-            period: "9.01.2023 - jetzt",
-            mainTask: [
-              "Erstellen einer Vielzahl von Animationen",
-              "Layout der Interface-Elemente",
-              "LandingPage-Entwicklung",
-            ],
-          },
-          {
             logo: "young-coder-school-logo.svg",
             company_name: "Young Coder School",
             company_industry: "Online IT Schule",
@@ -1301,6 +1349,18 @@ export const db = {
               "Durchführung von Einzelunterricht",
               "Durchführung von Gruppenunterricht (2-14 Schüler)",
               "Probeunterricht durchführen",
+            ],
+          },
+          {
+            logo: "melon-logo.svg",
+            company_name: "MELON Team",
+            company_industry: "WEB Studio",
+            position: "Frontend-Entwickler",
+            period: "9.01.2023 - 1.07.2023",
+            mainTask: [
+              "Erstellen einer Vielzahl von Animationen",
+              "Layout der Interface-Elemente",
+              "LandingPage-Entwicklung",
             ],
           },
           {
@@ -1337,6 +1397,40 @@ export const db = {
 
         projects: [
           {
+            project_photo: "marula.jpg",
+            project_title:
+              "Optimierung, Durchführung großer Änderungen im Frontteil und Schreiben eines Backends zur Bearbeitung von Anträgen für eine Hotelkette",
+            project_time: "70 Stunden",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://marulapark.com/en/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "keymap.jpg",
+            project_title: "Landingpage für ukrainisches Projekt",
+            project_time: "45-50 Stunden",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "http://keymap.ua/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
             project_photo: "ione.jpg",
             project_title:
               "I1-web studio WEB-Site-Optimierung und Neugestaltung",
@@ -1359,7 +1453,7 @@ export const db = {
             project_photo: "iat.jpg",
             project_title:
               "Optimierung und Einführung wesentlicher Änderungen auf der Website des IAT-Autohauses",
-            project_time: "180 Stunden",
+            project_time: "396 Stunden",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -1372,21 +1466,6 @@ export const db = {
               all_technologies.figma,
             ],
             link: "https://iat.ru",
-            tag: PROJECT_TAGS.site,
-          },
-          {
-            project_photo: "keymap.jpg",
-            project_title: "Landingpage für ukrainisches Projekt",
-            project_time: "45-50 Stunden",
-            technology_stack: [
-              all_technologies.html,
-              all_technologies.sass,
-              all_technologies.js,
-              all_technologies.webpack,
-              all_technologies.git,
-              all_technologies.figma,
-            ],
-            link: "http://keymap.ua/",
             tag: PROJECT_TAGS.site,
           },
           {
@@ -1628,18 +1707,7 @@ export const db = {
               "Écrire une page de destination à partir de zéro",
             ],
           },
-          {
-            logo: "melon-logo.svg",
-            company_name: "MELON TEAM",
-            company_industry: "studio WEB",
-            position: "Développeur Frontend",
-            period: "9.01.2023 - maintenant",
-            mainTask: [
-              "Créer diverses animations",
-              "Mise en page des éléments d'interface",
-              "Développement de pages de destination",
-            ],
-          },
+
           {
             logo: "young-coder-school-logo.svg",
             company_name: "Young Coder School",
@@ -1650,6 +1718,18 @@ export const db = {
               "Donner des cours particuliers",
               "Animation de cours collectifs (2-14 étudiants)",
               "Donner des leçons d'essai",
+            ],
+          },
+          {
+            logo: "melon-logo.svg",
+            company_name: "MELON TEAM",
+            company_industry: "studio WEB",
+            position: "Développeur Frontend",
+            period: "9.01.2023 - 1.07.2023",
+            mainTask: [
+              "Créer diverses animations",
+              "Mise en page des éléments d'interface",
+              "Développement de pages de destination",
             ],
           },
           {
@@ -1686,6 +1766,40 @@ export const db = {
 
         projects: [
           {
+            project_photo: "marula.jpg",
+            project_title:
+              "Optimisation, modification majeure de la partie front et rédaction d'un backend de traitement des candidatures pour une chaîne hôtelière",
+            project_time: "70 heures",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.wp,
+              all_technologies.php,
+              all_technologies.jquery,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://marulapark.com/en/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
+            project_photo: "keymap.jpg",
+            project_title: "Page de destination du projet ukrainien",
+            project_time: "45-50 heures",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "http://keymap.ua/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
             project_photo: "ione.jpg",
             project_title: "Optimisation et refonte du site WEB I1-web studio",
             project_time: "60-70 heures",
@@ -1707,7 +1821,7 @@ export const db = {
             project_photo: "iat.jpg",
             project_title:
               "Optimisation et introduction de changements majeurs sur le site Internet du concessionnaire automobile IAT",
-            project_time: "180 heures",
+            project_time: "396 heures",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -1720,21 +1834,6 @@ export const db = {
               all_technologies.figma,
             ],
             link: "https://iat.ru",
-            tag: PROJECT_TAGS.site,
-          },
-          {
-            project_photo: "keymap.jpg",
-            project_title: "Page de destination du projet ukrainien",
-            project_time: "45-50 heures",
-            technology_stack: [
-              all_technologies.html,
-              all_technologies.sass,
-              all_technologies.js,
-              all_technologies.webpack,
-              all_technologies.git,
-              all_technologies.figma,
-            ],
-            link: "http://keymap.ua/",
             tag: PROJECT_TAGS.site,
           },
           {
