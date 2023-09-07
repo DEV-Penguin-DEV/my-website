@@ -118,7 +118,7 @@ export const db = {
             link: "#main",
           },
           {
-            text: "Навички",
+            text: "Навыки",
             link: "#skills",
           },
           {
