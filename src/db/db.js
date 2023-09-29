@@ -425,6 +425,14 @@ export const db = {
             link: "https://www.figma.com/file/ly1VSwgs8ufd6Cwf2hLfyO/email-design-(ExtraHop)?type=design&node-id=50-2",
             tag: PROJECT_TAGS.design,
           },
+          {
+            project_photo: "KSD.jpg",
+            project_title: "Редизайн сайта",
+            project_time: "6 часов",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
+            tag: PROJECT_TAGS.design,
+          },
         ],
         text: {
           sort: {
@@ -791,6 +799,14 @@ export const db = {
             project_time: "6 годин",
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/ly1VSwgs8ufd6Cwf2hLfyO/email-design-(ExtraHop)?type=design&node-id=50-2",
+            tag: PROJECT_TAGS.design,
+          },
+          {
+            project_photo: "KSD.jpg",
+            project_title: "Редизайн сайту",
+            project_time: "6 годин",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
           },
         ],
@@ -1162,6 +1178,14 @@ export const db = {
             link: "https://www.figma.com/file/ly1VSwgs8ufd6Cwf2hLfyO/email-design-(ExtraHop)?type=design&node-id=50-2",
             tag: PROJECT_TAGS.design,
           },
+          {
+            project_photo: "KSD.jpg",
+            project_title: "Site redesign",
+            project_time: "6 hours",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
+            tag: PROJECT_TAGS.design,
+          },
         ],
         text: {
           sort: {
@@ -1530,6 +1554,14 @@ export const db = {
             link: "https://www.figma.com/file/ly1VSwgs8ufd6Cwf2hLfyO/email-design-(ExtraHop)?type=design&node-id=50-2",
             tag: PROJECT_TAGS.design,
           },
+          {
+            project_photo: "KSD.jpg",
+            project_title: "Site redesign",
+            project_time: "6 Stunden",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
+            tag: PROJECT_TAGS.design,
+          },
         ],
         text: {
           sort: {
@@ -1896,6 +1928,14 @@ export const db = {
             project_time: "6 heures",
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/ly1VSwgs8ufd6Cwf2hLfyO/email-design-(ExtraHop)?type=design&node-id=50-2",
+            tag: PROJECT_TAGS.design,
+          },
+          {
+            project_photo: "KSD.jpg",
+            project_title: "Site redesign",
+            project_time: "6 heures",
+            technology_stack: [all_technologies.ps, all_technologies.figma],
+            link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
           },
         ],
