@@ -1881,7 +1881,12 @@ export const db = {
         ],
         text: {
           sort: {
-            sort_texts: ["Tous", "Sites", "ApplFications mobiles", "Conception"],
+            sort_texts: [
+              "Tous",
+              "Sites",
+              "ApplFications mobiles",
+              "Conception",
+            ],
             sort_tags: [
               PROJECT_TAGS.all,
               PROJECT_TAGS.site,
