@@ -248,18 +248,6 @@ export const db = {
             ],
           },
           {
-            logo: "melon-logo.svg",
-            company_name: "MELON Team",
-            company_industry: "WEB студия",
-            position: "Frontend Developer",
-            period: "9.01.2023 - 1.07.2023",
-            mainTask: [
-              "Создание разнообразной анимации",
-              "Вёрстка интерфейсных элементов",
-              "Разработка LandingPage",
-            ],
-          },
-          {
             logo: "math-is-easy-logo.svg",
             company_name: "МатЦеПросто",
             company_industry: "Школа математики",
@@ -621,18 +609,6 @@ export const db = {
               "Проведення особистих уроків",
               "Проведення групових уроків (2-14 учнів)",
               "Проведення пробних уроків",
-            ],
-          },
-          {
-            logo: "melon-logo.svg",
-            company_name: "MELON Team",
-            company_industry: "WEB студія",
-            position: "Frontend Developer",
-            period: "9.01.2023 - 1.07.2023",
-            mainTask: [
-              "Створення різноманітної анімації",
-              "Верстка інтерфейсних елементів",
-              "Розробка LandingPage",
             ],
           },
           {
@@ -1000,18 +976,6 @@ export const db = {
             ],
           },
           {
-            logo: "melon-logo.svg",
-            company_name: "MELON Team",
-            company_industry: "WEB studio",
-            position: "Frontend Developer",
-            period: "9.01.2023 - 1.07.2023",
-            mainTask: [
-              "Creating a variety of animations",
-              "Layout of interface elements",
-              "LandingPage Development",
-            ],
-          },
-          {
             logo: "math-is-easy-logo.svg",
             company_name: "Math is Easy",
             company_industry: "School of Mathematics",
@@ -1373,18 +1337,6 @@ export const db = {
               "Durchführung von Einzelunterricht",
               "Durchführung von Gruppenunterricht (2-14 Schüler)",
               "Probeunterricht durchführen",
-            ],
-          },
-          {
-            logo: "melon-logo.svg",
-            company_name: "MELON Team",
-            company_industry: "WEB Studio",
-            position: "Frontend-Entwickler",
-            period: "9.01.2023 - 1.07.2023",
-            mainTask: [
-              "Erstellen einer Vielzahl von Animationen",
-              "Layout der Interface-Elemente",
-              "LandingPage-Entwicklung",
             ],
           },
           {
@@ -1753,18 +1705,6 @@ export const db = {
             ],
           },
           {
-            logo: "melon-logo.svg",
-            company_name: "MELON TEAM",
-            company_industry: "studio WEB",
-            position: "Développeur Frontend",
-            period: "9.01.2023 - 1.07.2023",
-            mainTask: [
-              "Créer diverses animations",
-              "Mise en page des éléments d'interface",
-              "Développement de pages de destination",
-            ],
-          },
-          {
             logo: "math-is-easy-logo.svg",
             company_name: "MathIsEasy",
             company_industry: "École de mathématiques",
@@ -1941,7 +1881,7 @@ export const db = {
         ],
         text: {
           sort: {
-            sort_texts: ["Tous", "Sites", "Applications mobiles", "Conception"],
+            sort_texts: ["Tous", "Sites", "ApplFications mobiles", "Conception"],
             sort_tags: [
               PROJECT_TAGS.all,
               PROJECT_TAGS.site,
