@@ -37,15 +37,20 @@ export default {
     let rowIndex = 0;
     let rowsIndex = 0;
     let row = [];
-    this.DB.data.forEach((el) => {
-      if (rowIndex >= elementsInRow) {
+    console.log(this.DB.data);
+    this.DB.data.forEach((el, index) => {
+      row[rowIndex] = el;
+      rowIndex++;
+      if (
+        rowIndex >= elementsInRow ||
+        (Math.floor(this.DB.data.length / elementsInRow) == rows.length &&
+          index == this.DB.data.length - 1)
+      ) {
         rowIndex = 0;
         rows[rowsIndex] = row;
         rowsIndex++;
         row = [];
       }
-      row[rowIndex] = el;
-      rowIndex++;
     });
     return {
       rows,
@@ -82,7 +87,7 @@ export default {
   display: flex;
 }
 
-@for $i from 1 through 6 {
+@for $i from 1 through 7 {
   // Замените 10 на количество элементов
   .skills-row__container:nth-child(#{$i}) {
     will-change: transform;

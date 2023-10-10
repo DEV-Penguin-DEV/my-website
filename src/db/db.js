@@ -99,6 +99,14 @@ const all_technologies = {
     img: "tilda-icon.svg",
     alt: "Tilda.",
   },
+  bitrix24api: {
+    img: "bitrix24api-icon.svg",
+    alt: "Bitrix 24 api.",
+  },
+  mysql: {
+    img: "mysql-icon.svg",
+    alt: "MySQL.",
+  },
 };
 
 const PROJECT_TAGS = {
@@ -213,6 +221,8 @@ export const db = {
           all_technologies.figma,
           all_technologies.flutter_flow,
           all_technologies.tilda,
+          all_technologies.bitrix24api,
+          all_technologies.mysql,
         ],
       },
     },
@@ -576,7 +586,10 @@ export const db = {
           all_technologies.pr,
           all_technologies.figma,
           all_technologies.flutter_flow,
+
           all_technologies.tilda,
+          all_technologies.bitrix24api,
+          all_technologies.mysql,
         ],
       },
     },
@@ -941,6 +954,9 @@ export const db = {
           all_technologies.figma,
           all_technologies.flutter_flow,
           all_technologies.tilda,
+
+          all_technologies.bitrix24api,
+          all_technologies.mysql,
         ],
       },
     },
@@ -1305,7 +1321,10 @@ export const db = {
           all_technologies.pr,
           all_technologies.figma,
           all_technologies.flutter_flow,
+
           all_technologies.tilda,
+          all_technologies.bitrix24api,
+          all_technologies.mysql,
         ],
       },
     },
@@ -1669,7 +1688,10 @@ export const db = {
           all_technologies.pr,
           all_technologies.figma,
           all_technologies.flutter_flow,
+
           all_technologies.tilda,
+          all_technologies.bitrix24api,
+          all_technologies.mysql,
         ],
       },
     },
