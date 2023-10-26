@@ -87,7 +87,7 @@ export default {
   display: flex;
 }
 
-@for $i from 1 through 7 {
+@for $i from 1 through 10 {
   // Замените 10 на количество элементов
   .skills-row__container:nth-child(#{$i}) {
     will-change: transform;
