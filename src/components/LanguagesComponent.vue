@@ -48,7 +48,7 @@ export default {
   font-weight: 600;
   line-height: 142%; /* 142.857% */
   letter-spacing: 0.13125rem;
-  @include margin-bottom(10px);
+  margin-bottom: 10px;
   margin-left: 10px;
 
   @media (max-width: $laptop-size) {

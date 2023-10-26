@@ -107,6 +107,18 @@ const all_technologies = {
     img: "mysql-icon.svg",
     alt: "MySQL.",
   },
+  postgresql: {
+    img: "postgresql-icon.svg",
+    alt: "PostgresSQL.",
+  },
+  basecamp: {
+    img: "basecamp-icon.svg",
+    alt: "BaseCamp.",
+  },
+  toggl_track: {
+    img: "toggl-track-icon.svg",
+    alt: "Toggl Track.",
+  },
 };
 
 const PROJECT_TAGS = {
@@ -223,6 +235,9 @@ export const db = {
           all_technologies.tilda,
           all_technologies.bitrix24api,
           all_technologies.mysql,
+          all_technologies.postgresql,
+          all_technologies.basecamp,
+          all_technologies.toggl_track,
         ],
       },
     },
@@ -590,6 +605,9 @@ export const db = {
           all_technologies.tilda,
           all_technologies.bitrix24api,
           all_technologies.mysql,
+          all_technologies.postgresql,
+          all_technologies.basecamp,
+          all_technologies.toggl_track,
         ],
       },
     },
@@ -957,6 +975,9 @@ export const db = {
 
           all_technologies.bitrix24api,
           all_technologies.mysql,
+          all_technologies.postgresql,
+          all_technologies.basecamp,
+          all_technologies.toggl_track,
         ],
       },
     },
@@ -1325,6 +1346,9 @@ export const db = {
           all_technologies.tilda,
           all_technologies.bitrix24api,
           all_technologies.mysql,
+          all_technologies.postgresql,
+          all_technologies.basecamp,
+          all_technologies.toggl_track,
         ],
       },
     },
@@ -1692,6 +1716,9 @@ export const db = {
           all_technologies.tilda,
           all_technologies.bitrix24api,
           all_technologies.mysql,
+          all_technologies.postgresql,
+          all_technologies.basecamp,
+          all_technologies.toggl_track,
         ],
       },
     },
