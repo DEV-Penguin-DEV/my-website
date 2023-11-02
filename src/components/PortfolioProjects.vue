@@ -13,6 +13,10 @@
       :projectTimeTitle="DB.text.projects_texts.project_time_title"
       :projectLink="project.link"
       :projectTag="project.tag"
+      :projectAppStore="project.appstore_link ? project.appstore_link : false"
+      :projectGooglePlay="
+        project.google_play_link ? project.google_play_link : false
+      "
     />
   </div>
   <button

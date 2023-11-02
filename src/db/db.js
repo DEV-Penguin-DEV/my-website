@@ -327,7 +327,7 @@ export const db = {
             project_photo: "iat.jpg",
             project_title:
               "Оптимизация и внесение крупных изменений на сайт автодилера IAT",
-            project_time: "396 часов",
+            project_time: "456 часов",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -338,6 +338,7 @@ export const db = {
               all_technologies.jquery,
               all_technologies.git,
               all_technologies.figma,
+              all_technologies.toggl_track,
             ],
             link: "https://iat.ru",
             tag: PROJECT_TAGS.site,
@@ -357,6 +358,7 @@ export const db = {
               all_technologies.jquery,
               all_technologies.git,
               all_technologies.figma,
+              all_technologies.toggl_track,
             ],
             link: "https://marulapark.com/en/",
             tag: PROJECT_TAGS.site,
@@ -445,6 +447,22 @@ export const db = {
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
+          },
+          {
+            project_photo: "tour-code.jpg",
+            project_title: "Создание мобильного приложения для путешествий",
+            project_time: "83 часа",
+            technology_stack: [
+              all_technologies.flutter_flow,
+              all_technologies.toggl_track,
+              all_technologies.figma,
+            ],
+            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            appstore_link:
+              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            google_play_link:
+              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
+            tag: PROJECT_TAGS.mobile_app,
           },
         ],
         text: {
@@ -690,6 +708,7 @@ export const db = {
               all_technologies.jquery,
               all_technologies.git,
               all_technologies.figma,
+              all_technologies.toggl_track,
             ],
             link: "https://marulapark.com/en/",
             tag: PROJECT_TAGS.site,
@@ -731,7 +750,7 @@ export const db = {
             project_photo: "iat.jpg",
             project_title:
               "Оптимізація та внесення великих змін на сайт автодилера IAT",
-            project_time: "396 годин",
+            project_time: "456 годин",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -742,6 +761,7 @@ export const db = {
               all_technologies.jquery,
               all_technologies.git,
               all_technologies.figma,
+              all_technologies.toggl_track,
             ],
             link: "https://iat.ru",
             tag: PROJECT_TAGS.site,
@@ -815,6 +835,22 @@ export const db = {
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
+          },
+          {
+            project_photo: "tour-code.jpg",
+            project_title: "Створення мобільного додатка для подорожей",
+            project_time: "83 години",
+            technology_stack: [
+              all_technologies.flutter_flow,
+              all_technologies.toggl_track,
+              all_technologies.figma,
+            ],
+            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            appstore_link:
+              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            google_play_link:
+              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
+            tag: PROJECT_TAGS.mobile_app,
           },
         ],
         text: {
@@ -1060,6 +1096,7 @@ export const db = {
               all_technologies.jquery,
               all_technologies.git,
               all_technologies.figma,
+              all_technologies.toggl_track,
             ],
             link: "https://marulapark.com/en/",
             tag: PROJECT_TAGS.site,
@@ -1102,7 +1139,7 @@ export const db = {
             project_photo: "iat.jpg",
             project_title:
               "Optimization and major changes to the IAT car dealer website",
-            project_time: "396 hours",
+            project_time: "456 hours",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -1113,6 +1150,7 @@ export const db = {
               all_technologies.jquery,
               all_technologies.git,
               all_technologies.figma,
+              all_technologies.toggl_track,
             ],
             link: "https://iat.ru",
             tag: PROJECT_TAGS.site,
@@ -1186,6 +1224,22 @@ export const db = {
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
+          },
+          {
+            project_photo: "tour-code.jpg",
+            project_title: "Creating a mobile travel application",
+            project_time: "83 Hours",
+            technology_stack: [
+              all_technologies.flutter_flow,
+              all_technologies.toggl_track,
+              all_technologies.figma,
+            ],
+            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            appstore_link:
+              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            google_play_link:
+              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
+            tag: PROJECT_TAGS.mobile_app,
           },
         ],
         text: {
@@ -1430,6 +1484,7 @@ export const db = {
               all_technologies.jquery,
               all_technologies.git,
               all_technologies.figma,
+              all_technologies.toggl_track,
             ],
             link: "https://marulapark.com/en/",
             tag: PROJECT_TAGS.site,
@@ -1472,7 +1527,7 @@ export const db = {
             project_photo: "iat.jpg",
             project_title:
               "Optimierung und Einführung wesentlicher Änderungen auf der Website des IAT-Autohauses",
-            project_time: "396 Stunden",
+            project_time: "456 Stunden",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -1483,6 +1538,7 @@ export const db = {
               all_technologies.jquery,
               all_technologies.git,
               all_technologies.figma,
+              all_technologies.toggl_track,
             ],
             link: "https://iat.ru",
             tag: PROJECT_TAGS.site,
@@ -1556,6 +1612,22 @@ export const db = {
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
+          },
+          {
+            project_photo: "tour-code.jpg",
+            project_title: "Erstellen einer mobilen Reiseanwendung",
+            project_time: "83 Stunden",
+            technology_stack: [
+              all_technologies.flutter_flow,
+              all_technologies.toggl_track,
+              all_technologies.figma,
+            ],
+            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            appstore_link:
+              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            google_play_link:
+              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
+            tag: PROJECT_TAGS.mobile_app,
           },
         ],
         text: {
@@ -1801,6 +1873,7 @@ export const db = {
               all_technologies.jquery,
               all_technologies.git,
               all_technologies.figma,
+              all_technologies.toggl_track,
             ],
             link: "https://marulapark.com/en/",
             tag: PROJECT_TAGS.site,
@@ -1842,7 +1915,7 @@ export const db = {
             project_photo: "iat.jpg",
             project_title:
               "Optimisation et introduction de changements majeurs sur le site Internet du concessionnaire automobile IAT",
-            project_time: "396 heures",
+            project_time: "456 heures",
             technology_stack: [
               all_technologies.html,
               all_technologies.sass,
@@ -1853,6 +1926,7 @@ export const db = {
               all_technologies.jquery,
               all_technologies.git,
               all_technologies.figma,
+              all_technologies.toggl_track,
             ],
             link: "https://iat.ru",
             tag: PROJECT_TAGS.site,
@@ -1890,7 +1964,7 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
-            project_photo: "grand-trip.jpg",
+            project_photo: "big-trip.jpg",
             project_title: "Service de voyage Vanilla JS",
             project_time: "80 heures",
             technology_stack: [
@@ -1926,6 +2000,22 @@ export const db = {
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
+          },
+          {
+            project_photo: "tour-code.jpg",
+            project_title: "Création d'une application mobile de voyage",
+            project_time: "83 heures",
+            technology_stack: [
+              all_technologies.flutter_flow,
+              all_technologies.toggl_track,
+              all_technologies.figma,
+            ],
+            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            appstore_link:
+              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            google_play_link:
+              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
+            tag: PROJECT_TAGS.mobile_app,
           },
         ],
         text: {

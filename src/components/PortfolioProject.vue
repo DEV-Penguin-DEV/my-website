@@ -14,6 +14,34 @@
       </picture>
     </a>
 
+    <div class="portfolio-project__apps" v-if="projectTag == 'mobile app'">
+      <a
+        v-if="projectAppStore"
+        :href="projectAppStore"
+        class="portfolio-project__app-link"
+        target="_blank"
+      >
+        <img
+          src="/img/app-store.svg"
+          alt="App store."
+          class="portfolio-project__app-icon"
+        />
+      </a>
+
+      <a
+        v-if="projectGooglePlay"
+        :href="projectGooglePlay"
+        class="portfolio-project__app-link"
+        target="_blank"
+      >
+        <img
+          src="/img/google-play.svg"
+          alt="Google Play."
+          class="portfolio-project__app-icon"
+        />
+      </a>
+    </div>
+
     <div class="portfolio-project__text-content">
       <h3 class="portfolio-project__title">{{ projectName }}</h3>
       <h4 class="portfolio-project__time-title">
@@ -69,11 +97,23 @@ export default {
       type: String,
       required: true,
     },
+    projectAppStore: {
+      type: String,
+      required: false,
+    },
+    projectGooglePlay: {
+      type: String,
+      required: false,
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.portfolio-project__apps {
+  display: flex;
+  gap: 20px;
+}
 .portfolio-project {
   display: flex;
   flex-direction: column;
