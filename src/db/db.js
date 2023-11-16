@@ -156,7 +156,7 @@ export const db = {
         ],
         normal_CV: {
           title: "PDF Версия резюме",
-          link: "https://drive.google.com/drive/folders/19XawFv3n3j4N7Xs4LFPULcxUjihfvGsE",
+          link: "https://drive.google.com/drive/folders/1K4uCJjlJjJWaRXuh30jpGoEcF5eL0TY6",
         },
       },
     },
@@ -543,7 +543,7 @@ export const db = {
         ],
         normal_CV: {
           title: "PDF Версія резюме",
-          link: "https://drive.google.com/drive/folders/19XawFv3n3j4N7Xs4LFPULcxUjihfvGsE",
+          link: "https://drive.google.com/drive/folders/1UvANMpXveHUxnu0Eu6NQz08ZnSlLk7DD",
         },
       },
     },
@@ -931,7 +931,7 @@ export const db = {
         ],
         normal_CV: {
           title: "PDF version of the resume",
-          link: "https://drive.google.com/drive/folders/19XawFv3n3j4N7Xs4LFPULcxUjihfvGsE",
+          link: "https://drive.google.com/drive/folders/1YUFgUWvbq-5UsKg02KYwHxPNXKjPc1xR",
         },
       },
     },
@@ -1320,7 +1320,7 @@ export const db = {
         ],
         normal_CV: {
           title: "PDF-Version des Lebenslaufs",
-          link: "https://drive.google.com/drive/folders/19XawFv3n3j4N7Xs4LFPULcxUjihfvGsE",
+          link: "https://drive.google.com/drive/folders/18ArysjDThS8fgN6lHkYi0AkyzHA7TnTA",
         },
       },
     },
@@ -1708,7 +1708,7 @@ export const db = {
         ],
         normal_CV: {
           title: "Version PDF du CV",
-          link: "https://drive.google.com/drive/folders/19XawFv3n3j4N7Xs4LFPULcxUjihfvGsE",
+          link: "https://drive.google.com/drive/folders/1OFu9gYsJpyCZL4jp1T6qt-eYCJ8gtZU-",
         },
       },
     },
