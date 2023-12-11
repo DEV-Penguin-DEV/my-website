@@ -379,6 +379,38 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
+            project_photo: "tour-code.jpg",
+            project_title: "Создание мобильного приложения для путешествий",
+            project_time: "83 часа",
+            technology_stack: [
+              all_technologies.flutter_flow,
+              all_technologies.toggl_track,
+              all_technologies.figma,
+            ],
+            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            appstore_link:
+              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            google_play_link:
+              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
+            tag: PROJECT_TAGS.mobile_app,
+          },
+          {
+            project_photo: "mk-elite.jpg",
+            project_title:
+              "Code review и ведение данного проекта в роли Старшего разработчика",
+            project_time: "10 часов",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://www.mkelite.ru/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
             project_photo: "pets-drom.jpg",
             project_title: "Landing Page для NFT проекта",
             project_time: "20-25 часов",
@@ -447,22 +479,6 @@ export const db = {
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
-          },
-          {
-            project_photo: "tour-code.jpg",
-            project_title: "Создание мобильного приложения для путешествий",
-            project_time: "83 часа",
-            technology_stack: [
-              all_technologies.flutter_flow,
-              all_technologies.toggl_track,
-              all_technologies.figma,
-            ],
-            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
-            appstore_link:
-              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
-            google_play_link:
-              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
-            tag: PROJECT_TAGS.mobile_app,
           },
         ],
         text: {
@@ -767,6 +783,38 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
+            project_photo: "tour-code.jpg",
+            project_title: "Створення мобільного додатка для подорожей",
+            project_time: "83 години",
+            technology_stack: [
+              all_technologies.flutter_flow,
+              all_technologies.toggl_track,
+              all_technologies.figma,
+            ],
+            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            appstore_link:
+              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            google_play_link:
+              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
+            tag: PROJECT_TAGS.mobile_app,
+          },
+          {
+            project_photo: "mk-elite.jpg",
+            project_title:
+              "Code review та ведення даного проекту в ролі Старшого розробника",
+            project_time: "10 годин",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://www.mkelite.ru/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
             project_photo: "pets-drom.jpg",
             project_title: "Landing Page для NFT проекту",
             project_time: "20-25 годин",
@@ -835,22 +883,6 @@ export const db = {
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
-          },
-          {
-            project_photo: "tour-code.jpg",
-            project_title: "Створення мобільного додатка для подорожей",
-            project_time: "83 години",
-            technology_stack: [
-              all_technologies.flutter_flow,
-              all_technologies.toggl_track,
-              all_technologies.figma,
-            ],
-            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
-            appstore_link:
-              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
-            google_play_link:
-              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
-            tag: PROJECT_TAGS.mobile_app,
           },
         ],
         text: {
@@ -1156,6 +1188,38 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
+            project_photo: "tour-code.jpg",
+            project_title: "Creating a mobile travel application",
+            project_time: "83 Hours",
+            technology_stack: [
+              all_technologies.flutter_flow,
+              all_technologies.toggl_track,
+              all_technologies.figma,
+            ],
+            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            appstore_link:
+              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            google_play_link:
+              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
+            tag: PROJECT_TAGS.mobile_app,
+          },
+          {
+            project_photo: "mk-elite.jpg",
+            project_title:
+              "Code review and leading this project as a Senior Developer",
+            project_time: "10 hours",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://www.mkelite.ru/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
             project_photo: "pets-drom.jpg",
             project_title: "Landing Page for NFT project",
             project_time: "20-25 hours",
@@ -1224,22 +1288,6 @@ export const db = {
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
-          },
-          {
-            project_photo: "tour-code.jpg",
-            project_title: "Creating a mobile travel application",
-            project_time: "83 Hours",
-            technology_stack: [
-              all_technologies.flutter_flow,
-              all_technologies.toggl_track,
-              all_technologies.figma,
-            ],
-            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
-            appstore_link:
-              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
-            google_play_link:
-              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
-            tag: PROJECT_TAGS.mobile_app,
           },
         ],
         text: {
@@ -1544,6 +1592,38 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
+            project_photo: "tour-code.jpg",
+            project_title: "Erstellen einer mobilen Reiseanwendung",
+            project_time: "83 Stunden",
+            technology_stack: [
+              all_technologies.flutter_flow,
+              all_technologies.toggl_track,
+              all_technologies.figma,
+            ],
+            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            appstore_link:
+              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            google_play_link:
+              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
+            tag: PROJECT_TAGS.mobile_app,
+          },
+          {
+            project_photo: "mk-elite.jpg",
+            project_title:
+              "Code review und leitete dieses Projekt als Senior Developer",
+            project_time: "10 Stunden",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://www.mkelite.ru/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
             project_photo: "pets-drom.jpg",
             project_title: "Landingpage für NFT-Projekt",
             project_time: "20-25 Stunden",
@@ -1612,22 +1692,6 @@ export const db = {
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
-          },
-          {
-            project_photo: "tour-code.jpg",
-            project_title: "Erstellen einer mobilen Reiseanwendung",
-            project_time: "83 Stunden",
-            technology_stack: [
-              all_technologies.flutter_flow,
-              all_technologies.toggl_track,
-              all_technologies.figma,
-            ],
-            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
-            appstore_link:
-              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
-            google_play_link:
-              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
-            tag: PROJECT_TAGS.mobile_app,
           },
         ],
         text: {
@@ -1932,6 +1996,38 @@ export const db = {
             tag: PROJECT_TAGS.site,
           },
           {
+            project_photo: "tour-code.jpg",
+            project_title: "Création d'une application mobile de voyage",
+            project_time: "83 heures",
+            technology_stack: [
+              all_technologies.flutter_flow,
+              all_technologies.toggl_track,
+              all_technologies.figma,
+            ],
+            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            appstore_link:
+              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
+            google_play_link:
+              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
+            tag: PROJECT_TAGS.mobile_app,
+          },
+          {
+            project_photo: "mk-elite.jpg",
+            project_title:
+              "Code review et diriger ce projet en tant que Développeur Senior",
+            project_time: "10 heures",
+            technology_stack: [
+              all_technologies.html,
+              all_technologies.sass,
+              all_technologies.js,
+              all_technologies.webpack,
+              all_technologies.git,
+              all_technologies.figma,
+            ],
+            link: "https://www.mkelite.ru/",
+            tag: PROJECT_TAGS.site,
+          },
+          {
             project_photo: "pets-drom.jpg",
             project_title: "Page de destination du projet NFT",
             project_time: "20-25 heures",
@@ -2000,22 +2096,6 @@ export const db = {
             technology_stack: [all_technologies.ps, all_technologies.figma],
             link: "https://www.figma.com/file/q1v1ct7QfqR5JuIbZ5Hzd8/Said?type=design&node-id=701%3A9&mode=design&t=zHAIFP54ELpH2XKG-1",
             tag: PROJECT_TAGS.design,
-          },
-          {
-            project_photo: "tour-code.jpg",
-            project_title: "Création d'une application mobile de voyage",
-            project_time: "83 heures",
-            technology_stack: [
-              all_technologies.flutter_flow,
-              all_technologies.toggl_track,
-              all_technologies.figma,
-            ],
-            link: "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
-            appstore_link:
-              "https://apps.apple.com/ru/app/%D1%82%D1%83%D1%80%D0%BA%D0%BE%D0%B4/id6470460202",
-            google_play_link:
-              "https://play.google.com/store/apps/details?id=com.mycompany.tourcode&pcampaignid=web_share",
-            tag: PROJECT_TAGS.mobile_app,
           },
         ],
         text: {
