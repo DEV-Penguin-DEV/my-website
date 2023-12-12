@@ -3,11 +3,6 @@ import App from "./App.vue";
 import store from "./store"; // Импорт вашего store
 import router from "./router";
 import { startAnimation } from "./plugins/animation";
-import { inject } from "@vercel/analytics";
-import { injectSpeedInsights } from "@vercel/speed-insights";
-
-injectSpeedInsights();
-inject();
 
 const app = createApp(App);
 
